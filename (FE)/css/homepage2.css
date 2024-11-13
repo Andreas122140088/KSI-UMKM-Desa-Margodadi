@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -62,105 +62,6 @@
     color: #6F4B9B;
   }
 
-  .main-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #47005f;
-    width: 1025px;
-    height: 500px;
-    color: #fff;
-    padding: 40px;
-    position: relative;
-  }
-  
-  .main-content {
-    max-width: 500px;
-  }
-  
-  .main-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 15px;
-  }
-
-  .main-content h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-  
-  .main-content p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  .view-more-button,
-  .learn-more-button {
-    padding: 10px 50px;
-    border: none;
-    border-radius: 20px;
-    color: #fff;
-    font-size: 0.9rem;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .view-more-button {
-    background-color: #6F4B9B;
-  }
-  
-  .learn-more-button {
-    background-color: #02a142;
-    color: #333;
-    margin-left: 100px;
-  }
-  
-  .purple-box {
-    width: 425px;
-    height: 300px;
-    background-color: #7B4BA2;
-    position: absolute;
-    margin-left: 800px;
-    z-index: 1;
-    border-radius: 20px;
-  }
-
-  .left-arrow, .right-arrow {
-    position: absolute;
-    display: flex;
-    cursor: pointer;
-    color: #050007;
-    top: 125px;
-    left: 10px;
-  }
-
-  .right-arrow{
-    position: absolute;
-    display: flex;
-    cursor: pointer;
-    color: #050007;
-    left: 370px;
-  }
-
-  .image1 {
-    width: 275px;
-    height: auto;
-    margin-left: 70px;
-    margin-top: 60px;
-    transform: rotate(-20deg);
-  }
-
-  .overlay-box {
-    width: 488px;
-    height: 500px;
-    background-color: #B07FCC;
-    position: absolute;
-    margin-left: 985px;
-    z-index: 0;
-  }
-  
-
   .product-card {
     display: inline-block;
     max-width: 345px;
@@ -207,30 +108,6 @@
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #000000;
-  }
-
-  .all-produk{
-    padding: 10px 50px;
-    border: rgb(25, 2, 94);
-    background-color: #9a42e1;
-    border-radius: 30px;
-    color: #000000;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: 665px;
-  }
-
-  .all-produk:hover {
-    background-color: #78499e; /* Darken background on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-  }
-
-  .all-produk:active {
-    background-color: #000000; /* Darker background on click */
-    transform: translateY(1px); /* Button pressed effect */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Slightly smaller shadow */
   }
 
   .footer {
@@ -300,11 +177,10 @@
 
   .footer-social .social-icons {
     display: flex;
-    position: absolute;
     align-items: flex-start;
     gap: 10px;
     margin-top: 30px;
-    margin-left: 350px;
+    margin-left: 400px;
     cursor: pointer;
   }
 

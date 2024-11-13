@@ -1,47 +1,65 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  overflow-y: auto;
   background-color: #ffffff;
-  color: rgb(0, 0, 0);
 }
 
 .navbar {
   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 3px solid #ddd;
-  }
-  
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .logo {
-  height: 50px; 
-  margin-right: 10px;
-  cursor: pointer;
+  width: 40px;
+  height: auto;
 }
 
-.navbar h1 {
-  flex-grow: 1;
-  font-size: 20px; 
+.site-name {
   font-weight: bold;
-  font-style: italic; 
-  line-height: 1.2; 
-  margin: 0; 
+  font-size: 1.5rem;
+  color: #000;
 }
 
-.menu-button {
-  font-size: 16px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  margin-left: 50px;
-  margin-right: 40px;
+.navbar-center {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex: 1;
+  gap: 100px;
+  margin-right: 100px;
+}
+
+.navbar-center a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar-center a:hover {
+  color: #6F4B9B;
 }
 
 .content {

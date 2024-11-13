@@ -80,19 +80,21 @@ body {
 
 .login-line {
   flex-direction: row;
-  width: 40px;
+  width: 60px;
   height: 2px;
   background-color: #B384CE;
   margin-right: 8px;
+  margin-bottom: 10px;
   align-self: center;
 }
 .left-section h2 {
-  position: relative;
+  position: absolute;
   font-size: 15px;
   font-weight: normal;
   color: rgb(0, 0, 0);
   line-height: 1.1;
-  margin: 0;
+  margin-left: 65px;
+  top: 163px;
 }
 
 .login-box {
@@ -100,7 +102,6 @@ body {
   color: black;
   padding: 30px;
   border-radius: 10px;
-  margin-top: 100px;
   margin-left: 50px;
   width: 400px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);

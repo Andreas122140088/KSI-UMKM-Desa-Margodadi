@@ -1,83 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #fff;
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .menu-icon {
-    width: 24px;
-    margin-right: 15px;
-    cursor: pointer;
-  }
-  
-  .logo {
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  .site-name {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #000;
-  }
-    
-  .search-box {
-    width: 600px;
-    padding: 8px 12px;
-    border-radius: 20px;
-    border: 1px solid #ddd;
-    background-color: #f0e6f6;
-    color: #333;
-    margin-left: 50px;
-  }
-  
-  .navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .search-icon {
-    width: 20px;
-    cursor: pointer;
-    margin-right: 150px;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
 
-  .favorite-icon {
-    width: 20px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  .user-name {
-    font-family: monospace; 
-    font-size: 16px; 
-    color: #888; 
-    padding: 10px;
-    vertical-align: middle;
-  }
-  
-  .user-actions img {
-    width: 30px; 
-    border-radius: 50%;
-    cursor: pointer;
-  }
+body {
+  overflow-y: auto;
+  background-color: #ffffff;
+}
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.site-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex: 1;
+  gap: 100px;
+  margin-right: 100px;
+}
+
+.navbar-center a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar-center a:hover {
+  color: #6F4B9B;
+}
   .main-section {
     display: flex;
     justify-content: center;
@@ -123,9 +106,9 @@
 
   .info-item {
     display: flex;
-    justify-content: space-between;
+    text-align: left;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
   }
 
@@ -147,4 +130,105 @@
     width: 16px;
     height: 16px;
     cursor: pointer;
+  }
+
+  .footer {
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .footer-links{
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+
+  .footer-links h3{
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 10px;    
+  }
+
+  .footer-links ul {
+    list-style-type: none;
+    margin-top: 30px;
+  }
+
+  .footer-links ul li a {
+    color: #ccc;
+    text-decoration: double;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .footer-links a{
+    margin-top: 20px;
+  }
+
+  .footer-service{
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+
+  .footer-service h3{
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .footer-service ul{
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .footer-service ul li a {
+    color: #ccc;
+    text-decoration: double;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .footer-social .social-icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+    margin-left: 400px;
+    cursor: pointer;
+  }
+
+  .facebook{
+    margin-left: 50px;
+  }
+
+  .instagram{
+    margin-left: 50px;
+  }
+
+  .envelope{
+    margin-left: 50px;
+  }
+
+  .footer-social h4{
+    font-size: 1.2rem;
+    margin-top: 50px;
+    margin-left: 550px;
+  }
+
+  .footer-bottom {
+    position: absolute;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 70px;
+    margin-left: 30px;
   }

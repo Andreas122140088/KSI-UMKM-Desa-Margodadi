@@ -124,14 +124,14 @@ body {
 .right-section {
   display: flex;
   justify-content: center;
-  padding-right: 40px;
+  padding: 0px 40px;
 }
 
 .box {
   background-color: white;
   color: #1a1a1a;
   padding: 20px;
-  width: 400px;
+  width: 500px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left;
   font-family: Arial, sans-serif;
@@ -147,8 +147,10 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 5px;
-  background-color: #f6e6fb; /* Light pastel purple background */
+  border: 0.5px solid #f3eeee;
+  background-color: #ffffff; /* Light pastel purple background */
   padding: 8px;
+  margin: 0;
 }
 
 .text h4 {
@@ -164,10 +166,10 @@ body {
 
 .line {
   display: flex;
-  width: 2px;
-  height: 60px;
+  width: 1px;
+  height: 80px;
   background-color: #928B8B;
-  margin: 10px 0;
+  margin: 0px 14px;
   align-self: center;
 }
 
@@ -182,7 +184,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 30px;
+  gap: 10px;
 }
 
 .footer-about h3 {

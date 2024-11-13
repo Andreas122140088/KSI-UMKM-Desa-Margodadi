@@ -302,8 +302,28 @@ input[type="checkbox"] {
 
 .user-stars {
   font-size: 16px;
-  color: #FFD700; /* Star color */
+  color: #FFD700; 
+  margin-bottom: 5px; 
+}
+
+.user-rating {
+  display: flex;
+  flex-direction:column;
+  align-items: justify;
+}
+
+.user-info {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; 
   margin-bottom: 5px;
+}
+
+.profile-pic {
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%; 
+  background-color: #ccc; 
 }
 
 .username {
@@ -312,9 +332,15 @@ input[type="checkbox"] {
   margin: 0;
 }
 
-.variant, .comment {
-  font-size: 14px;
+.variant{
+  font-size: 12px;
   color: #666;
+  margin: 2px 0;
+}
+
+.comment {
+  font-size: 14px;
+  color: #000000;
   margin: 2px 0;
 }
 

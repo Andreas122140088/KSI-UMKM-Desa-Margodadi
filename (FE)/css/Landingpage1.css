@@ -227,7 +227,6 @@
     height: 300px;
     background-color: #333;
     color: #fff;
-    padding: 0px;
     margin-top: 40px;
   }
 
@@ -237,7 +236,7 @@
   }
 
   .footer-links{
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 50px;
   }
 
@@ -249,8 +248,6 @@
 
   .footer-links ul {
     list-style-type: none;
-    padding: 10px;
-    background-color: #02a142;
     margin-top: 30px;
   }
 
@@ -266,16 +263,20 @@
     margin-top: 20px;
   }
 
+  .footer-service{
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+
   .footer-service h3{
     font-size: 1.2rem;
     text-align: left;
-    margin-bottom: 10px;
   }
 
   .footer-service ul{
     list-style-type: none;
-    background-color: #02a142;
     padding: 10px;
+    margin-top: 30px;
   }
 
   .footer-service ul li a {
@@ -284,25 +285,39 @@
     font-size: 1rem;
     transition: color 0.3s ease;
     cursor: pointer;
-    margin-bottom: 5px;
   }
 
   .footer-social .social-icons {
     display: flex;
+    align-items: flex-start;
     gap: 10px;
-    margin-left: 100px;
+    margin-top: 30px;
+    margin-left: 400px;
+  }
+
+  .facebook{
+    margin-left: 50px;
+  }
+
+  .instagram{
+    margin-left: 50px;
+  }
+
+  .messenger{
+    margin-left: 50px;
   }
 
   .footer-social h4{
     font-size: 1.2rem;
-    margin-bottom: 10px;
-    margin-left: 150px;
+    margin-top: 50px;
+    margin-left: 550px;
   }
 
   .footer-bottom {
     position: absolute;
     text-align: center;
-    margin-top: 100px;
     font-size: 0.9rem;
     color: #aaa;
+    margin-top: 70px;
+    margin-left: 30px;
   }

@@ -20,7 +20,7 @@ body {
     border-bottom: 3px solid #ddd;
   }
 .logo {
-  height: 50px; /* Sesuaikan ukuran logo */
+  height: 50px; 
   margin-right: 10px;
   cursor: pointer;
 }
@@ -40,7 +40,7 @@ body {
   background: none;
   cursor: pointer;
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 .content {
@@ -55,13 +55,25 @@ body {
   text-align: left;
   padding-right: 40px;
 }
+.container {
+  display: flex;
+}
 
+.login-line {
+  flex-direction: row;
+  width: 40px;
+  height: 2px;
+  background-color: #B384CE;
+  margin-right: 8px;
+  align-self: center;
+}
 .left-section h2 {
+  position: relative;
   font-size: 15px;
-  font-weight: lighter;
+  font-weight: normal;
   color: rgb(0, 0, 0);
-  line-height: 1.1; /* Sesuaikan spasi antara teks */
-  margin: 20px;
+  line-height: 1.1;
+  margin: 0;
 }
 
 .login-box {
@@ -132,7 +144,6 @@ body {
   color: #1a1a1a;
   padding: 20px;
   width: 500px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left;
   font-family: Arial, sans-serif;
 }
@@ -148,7 +159,8 @@ body {
   height: 30px;
   border-radius: 5px;
   border: 0.5px solid #f3eeee;
-  background-color: #ffffff; /* Light pastel purple background */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding: 8px;
   margin: 0;
 }
@@ -166,7 +178,7 @@ body {
 
 .line {
   display: flex;
-  width: 1px;
+  width: 0.5px;
   height: 80px;
   background-color: #928B8B;
   margin: 0px 14px;

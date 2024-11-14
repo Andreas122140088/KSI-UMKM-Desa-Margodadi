@@ -32,87 +32,95 @@
     </div>
     
     <div class="purple-box">
-      <div class="left-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
-        </svg>
+      <div class="left-arrow" onclick="prevImage()">
+        <img src="/resources/assets/prev.png" class="left-arrow">
       </div>
-      <img src="/resources/assets/rengginang.jpeg" class="image1">
-      <div class="right-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-        </svg>
+      <img src="/resources/assets/rengginang.jpeg" class="image1" id="carousel-image">
+      <div class="right-arrow" onclick="nextImage()"> 
+        <img src="/resources/assets/next.png" class="right-arrow">
       </div>
     </div>
     <div class="overlay-box"></div> 
   </div>
 
+  <script>
+    const images = [
+      "/resources/assets/rengginang.jpeg",
+      "/resources/assets/gambar3.jpg",
+      "/resources/assets/gambar2.jpg" 
+    ];
+    let currentIndex = 0;
+
+    // Fungsi untuk menampilkan gambar sebelumnya
+    function prevImage() {
+      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+      document.getElementById('carousel-image').src = images[currentIndex];
+    }
+
+    // Fungsi untuk menampilkan gambar berikutnya
+    function nextImage() {
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+      document.getElementById('carousel-image').src = images[currentIndex];
+    }
+
+    function startAutoSlide() {
+      setInterval(nextImage, 2200);
+    }
+
+    // Mulai otomatis geser ketika halaman dimuat
+    window.onload = startAutoSlide;
+  </script>
+
   <section class="product-grid">
     <div class="product-card">
-      <img src="/resources/assets/rengginang.jpeg" class="batik-1">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="heart" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-      </svg>
+      <img src="/resources/assets/rengginang.jpeg" class="product">
+      <img src="/resources/assets/favorite_icon.png" class="heart">
       <h2>Batik</p></h2>
       <p>Description</p>
     </div>
     <div class="product-card">
-      <img src="/resources/assets/rengginang.jpeg" class="rengginang-gambar">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="heart" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-      </svg>
+      <img src="/resources/assets/rengginang.jpeg" class="product">
+      <img src="/resources/assets/favorite_icon.png" class="heart">
       <h2>Rengginang</p></h2>
       <p>Description</p>
     </div>
     <div class="product-card">
-      <img src="/resources/assets/rengginang.jpeg" class="kerajinan1">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="heart" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-      </svg>
+      <img src="/resources/assets/rengginang.jpeg" class="product">
+      <img src="/resources/assets/favorite_icon.png" class="heart">
       <h2>Kerajinan Tangan</h2>
       <p>Product Description</p>
     </div>
     <div class="product-card">
-      <img src="/resources/assets/rengginang.jpeg" class="batik-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="heart" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-      </svg>
+      <img src="/resources/assets/rengginang.jpeg" class="product">
+      <img src="/resources/assets/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
-      <img src="/resources/assets/rengginang.jpeg" class="batik-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="heart" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-      </svg>
+      <img src="/resources/assets/rengginang.jpeg" class="product">
+      <img src="/resources/assets/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
-      <img src="/resources/assets/rengginang.jpeg" class="batik-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="heart" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-      </svg>
+      <img src="/resources/assets/rengginang.jpeg" class="product">
+      <img src="/resources/assets/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
-      <img src="/resources/assets/rengginang.jpeg" class="batik-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="heart" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-      </svg>
+      <img src="/resources/assets/rengginang.jpeg" class="product">
+      <img src="/resources/assets/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
-      <img src="/resources/assets/rengginang.jpeg" class="batik-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="heart" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-      </svg>
+      <img src="/resources/assets/rengginang.jpeg" class="product">
+      <img src="/resources/assets/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
-    <button class="all-produk" onclick="window.location.href='homepage2.html'">Lihat Semua</button>
+    <button class="all-produk" onclick="window.location.href='homepage2.html'">Lihat Semua</button>
   </section>
   
   <footer class="footer">

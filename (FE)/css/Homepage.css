@@ -126,21 +126,26 @@
     border-radius: 20px;
   }
 
-  .left-arrow, .right-arrow {
+  .left-arrow{
+    width: 50px;
+    height: auto;
     position: absolute;
     display: flex;
     cursor: pointer;
     color: #050007;
-    top: 125px;
-    left: 10px;
+    top: 60px;
+    left: 5px;
   }
 
   .right-arrow{
+    width: 50px;
+    height: auto;
     position: absolute;
     display: flex;
     cursor: pointer;
     color: #050007;
-    left: 370px;
+    top: 60px;
+    right: 5px;
   }
 
   .image1 {
@@ -148,7 +153,16 @@
     height: auto;
     margin-left: 70px;
     margin-top: 60px;
-    transform: rotate(-20deg);
+  }
+
+  .carousel-image {
+    transition: opacity 2s ease-in-out; /* Transisi smooth selama 1 detik */
+    opacity: 1;
+    position: absolute;
+  }
+
+  .fade-out {
+    opacity: 0;
   }
 
   .overlay-box {
@@ -180,7 +194,7 @@
     margin-right: 5px;
   }
 
-  .product-card img{
+  .product{
     position: relative;
     width: 100%;
     height: auto;
@@ -194,6 +208,7 @@
     cursor: pointer;
     width: 20px;
     height: auto;
+    fill: red;
     margin-top: 5px;
     margin-left: 5px;
   }
@@ -222,9 +237,9 @@
   }
 
   .all-produk:hover {
-    background-color: #78499e; /* Darken background on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
+    background-color: #78499e; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
   }
 
   .all-produk:active {

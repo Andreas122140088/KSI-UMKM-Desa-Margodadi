@@ -285,6 +285,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
     padding: 7px 15px;
     background-color: #fff;
     position: relative;
@@ -313,10 +314,10 @@ body {
   .navbar-center {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: left;
     flex: 1;
     gap: 100px;
-    margin-right: 100px;
+    margin-left: 100px;
   }
   
   .navbar-center a {
@@ -351,5 +352,21 @@ body {
     flex-direction: column;
   }
 
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px;
+    margin-top: 50px;
+    overflow-y: auto;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    gap: 10px;
+    position: relative;
+    width: 905;
+  }
   
 }

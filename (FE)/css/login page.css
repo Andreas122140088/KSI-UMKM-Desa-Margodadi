@@ -20,7 +20,8 @@ body {
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #fff;
-  position: relative;
+  border-bottom: 3px solid #aaa;
+ 
 }
 
 .navbar-left {
@@ -46,10 +47,10 @@ body {
 .navbar-center {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: left;
   flex: 1;
   gap: 100px;
-  margin-right: 100px;
+  margin-left: 200px;
 }
 
 .navbar-center a {
@@ -210,14 +211,17 @@ body {
 .footer {
   background-color: #000000;
   color: #fff;
-  padding: 40px 10%;
+  padding: 40px;
   margin-top: 50px;
+  overflow-y: auto;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
   gap: 10px;
+  position: relative;
 }
 
 .footer-about h3 {
@@ -274,4 +278,76 @@ body {
   color: #aaa;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 15px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: auto;
+  }
+  
+  .site-name {
+    flex-grow: 3;
+    font-size: 15px; 
+    font-weight: bold;
+    font-style: italic; 
+    line-height: 1; 
+    margin: px; 
+  }
+  
+  .navbar-center {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex: 1;
+    gap: 10px;
+    margin-right: 100px;
+  }
+  
+  .navbar-center a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s;
+  }
 
+  .login-box {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 30px;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  .box-login h3 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .login-box form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+}

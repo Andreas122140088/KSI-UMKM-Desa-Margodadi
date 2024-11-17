@@ -49,7 +49,7 @@ body {
 .navbar-center {
   display: flex;
   align-items: center;
-  justify-content: right
+  justify-content: right;
   flex: 1;
   gap: 100px;
   margin-right: 100px;

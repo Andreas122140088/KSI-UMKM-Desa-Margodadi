@@ -219,11 +219,14 @@ body {
 }
 
 .footer-container {
+  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   gap: 10px;
   position: relative;
+  width: 100%
+  
 }
 
 .footer-about h3 {
@@ -362,11 +365,13 @@ body {
   
   .footer-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
     gap: 10px;
     position: relative;
-    width: 905;
+    margin: auto;
+    width: 90%;
   }
   
 }

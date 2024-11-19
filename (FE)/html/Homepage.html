@@ -11,7 +11,10 @@
   <div class="navbar">
     <div class="navbar-left">
       <img src="/resources/assets/logo.gif" alt="Logo Margodadi" class="logo">
-      <span class="site-name">UMKM DESA MARGODADI</span>
+      <span class="site-name">
+        <p><em>UMKM</em></p>
+        <p><em>Desa Margodadi</em></p>
+      </span>
     </div>
     <div class="navbar-center">
       <a href="#about">ABOUT</a>
@@ -64,7 +67,7 @@
     }
 
     function startAutoSlide() {
-      setInterval(nextImage, 2200);
+      setInterval(nextImage, 5000);
     }
 
     // Mulai otomatis geser ketika halaman dimuat
@@ -169,28 +172,6 @@
     <p>&copy; KSI-Kel 6 Copyright 2024 - All Right Reserved.</p>
   </div>
   </footer>
-
-  <script>
-    document.addEventListener("scroll", function() {
-      const navbarLinks = document.querySelectorAll(".navbar-center a");
-      const sections = document.querySelectorAll("section, .main-section");
-      let currentSection = "";
-  
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        if (window.scrollY >= sectionTop) {
-          currentSection = section.getAttribute("id");
-        }
-      });
-  
-      navbarLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === `#${currentSection}`) {
-          link.classList.add("active");
-        }
-      });
-    });
-  </script>
 
 </body>
 </html>

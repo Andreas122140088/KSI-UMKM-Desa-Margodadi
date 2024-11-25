@@ -3,49 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>after delete</title>
-  <link rel="stylesheet" href="/(FE)/css/after_delete.css">
+  <title>favorite page</title>
+  <link rel="stylesheet" href="/css/favorite.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
 
   <div class="navbar">
     <div class="navbar-left">
-      <img src="logo.gif" class="logo">
+      <img src="/" class="logo">
       <span class="site-name">UMKM DESA MARGODADI</span>
     </div>
-    <input type="text" placeholder="Cari produk disini" class="search-box">
+    <div class="navbar-left">
+      <p class="title">ABOUT</p>
+      <p class="title">PORTFOLIO</p>
+      <p class="title">PRODUCT</p>
+      <p class="title">EXPERTISE</p>
+    </div>
     <div class="navbar-right">
-        <img src="image-6.png" class="search-icon">
-        <img src="image-4.png" class="favorite-icon">
-				<p class="title">User</p>
-				<img class="profile" src="LogosCA.png">
+			<p class="title">CONTACT</p>
+      <p class="title">BLOG</p>
     </div>
   </div>
 
   <div class="main-section">
 	  <div class="box">
-			    <p class="favorite-product">Barang Favorit Anda</p>
+			    <p class="font">Login</p>
           <div class="box-body">
-          <img src="image-5.png" class="pic">
+            <p class="text">Rengginang</p>
+          <img src="/img/image-5.png" class="pic">
           <div class="product">
-          <p class="text">Rengginang</p>
           <p class="description">Lorem Ipsum Dolor Sit Amet</p>
           </div>
           <div class="button">
           <button class = "whatsapp" >WHATSAPP</button>
-          <img src="image-3.png" class="trash-icon">
+          <img src="/img/image-3.png" class="trash-icon">
         </div>
         </div>
           <div class="box-body">
-          <img src="image-5.png" class="pic">
-          <div class="product">
           <p class="text">Usus Sulam</p>
+          <img src="/img/image-5.png" class="pic">
+          <div class="product">
           <p class="description">Lorem Ipsum Dolor Sit Amet</p>
           </div>
           <div class="button">
           <button class = "whatsapp" >WHATSAPP</button>
-          <img src="image-3.png" class="trash-icon">
+          <img src="/img/image-3.png" class="trash-icon">
         </div>
         </div>
 </body>

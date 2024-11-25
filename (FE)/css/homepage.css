@@ -62,6 +62,44 @@
     color: #6F4B9B;
   }
 
+  .dropdown {
+    display: none; 
+    position: relative;
+  }
+  
+  .dropdown-btn {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    display: none; /* Tersembunyi pada layar besar */
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    width: 150px;
+    z-index: 100;
+  }
+  
+  .dropdown-menu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 0;
+  }
+  
+  .dropdown-menu a:hover {
+    color: #6F4B9B;
+  }
+
   .main-section {
     display: flex;
     align-items: center;
@@ -151,7 +189,7 @@
   .image1 {
     width: 275px;
     height: auto;
-    margin-left: 70px;
+    margin-left: 75px;
     margin-top: 60px;
   }
 
@@ -169,7 +207,7 @@
   .overlay-box {
     display: flex;
     width: 100%;
-    max-width: 487px;
+    max-width: 494px;
     height: 500px;
     background-color: #B07FCC;
     position: absolute;
@@ -228,7 +266,7 @@
   }
 
   .all-produk{
-    display: inline-block;
+    display: flex;
     align-items: center;
     position: relative;
     padding: 10px 50px;
@@ -321,7 +359,6 @@
 
   .footer-social .social-icons {
     display: flex;
-    position: absolute;
     align-items: flex-start;
     gap: 10px;
     margin-top: 30px;
@@ -329,16 +366,10 @@
     cursor: pointer;
   }
 
-  .facebook{
-    margin-left: 50px;
-  }
-
-  .instagram{
-    margin-left: 50px;
-  }
-
-  .envelope{
-    margin-left: 50px;
+  .social-icons img{
+    width: 20px;
+    height: auto;
+    margin-left: 200px;
   }
 
   .footer-social h4{
@@ -355,3 +386,55 @@
     margin-top: 70px;
     margin-left: 30px;
   }
+
+  @media (max-width: 768px) {
+    .navbar-center {
+      display: none; /* Sembunyikan menu horizontal */
+    }
+    .dropdown {
+      display: block; /* Tampilkan dropdown */
+    }
+    .dropdown-menu {
+      display: flex; /* Perbaiki agar menu dropdown bisa dilihat */
+      flex-direction: column;
+    }
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .purple-box {
+        width: 80%;
+        height: 50%;
+        margin: 20px 0;
+        margin-top: 100px;
+    }
+    .purple-box img{
+      width: 70%;
+      height: auto;
+    }
+    .purple-box .image1{
+      position: absolute;
+      left: 20%;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .product-card {
+      margin: 10px 0; /* Kurangi margin untuk hemat ruang */
+    }
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      }
+    .footer-links,
+    .footer-service,
+    .footer-social {
+      margin: 20px 0;
+    }
+  }
+

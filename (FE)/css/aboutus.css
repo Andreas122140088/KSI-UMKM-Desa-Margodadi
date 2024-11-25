@@ -370,3 +370,104 @@ body {
 }
 
 /* Responsive for Mobile */
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    nav {
+        display: none; /* Sembunyikan navigasi utama */
+    }
+
+    .dropdown {
+        display: block; /* Tampilkan dropdown untuk navigasi */
+    }
+
+    .dropdown-menu {
+        display: block;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        color: black;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-section img {
+        max-width: 100%; /* Gambar menyesuaikan layar */
+        transform: none;
+    }
+
+    .quote {
+        position: static;
+        transform: none;
+        margin: 20px 0;
+        max-width: 100%;
+    }
+
+    .desa-content,
+    .umkm-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desa-image img,
+    .umkm-image img {
+        max-width: 80%; /* Sesuaikan ukuran gambar */
+        margin: 20px 0;
+    }
+
+    .desa-text,
+    .umkm-text {
+        margin: 0; /* Hilangkan margin kiri dan kanan */
+    }
+
+    .umkm-text h2,
+    .desa-text h2 {
+        margin: 20px 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-links ul,
+    .footer-service ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-links ul li,
+    .footer-service ul li {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    .footer-social {
+        margin: 20px 0;
+    }
+
+    .footer-social h4 {
+        margin-left: 0;
+    }
+
+    .footer-bottom {
+        position: static;
+        margin: 20px 0;
+    }
+}
+    

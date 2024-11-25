@@ -377,35 +377,19 @@ nav a:hover {
 
 /* Responsive for Mobile */
 @media (max-width: 768px) {
-  /* Header Section */
+  /* Header adjustments for mobile */
   header {
       flex-direction: column;
-      padding: 10px 20px;
+      align-items: flex-start;
+      padding: 10px 10px;
   }
 
-  .logo-section {
-      flex-direction: row;
-      align-items: center;
-  }
-
-  .logo {
-      width: 40px;
-  }
-
-  .logo-text h1 {
-      font-size: 16px;
+  .menu-toggle {
+      display: flex; /* Tampilkan menu toggle untuk mobile */
   }
 
   nav {
-      display: none; /* Sembunyikan menu besar di mobile */
-  }
-
-  .dropdown {
-      display: block; /* Tampilkan dropdown menu */
-  }
-
-  .dropdown-btn {
-      display: block; /* Tampilkan tombol dropdown */
+      display: none; /* Sembunyikan menu desktop */
   }
 
   /* WHO WE ARE Section */
@@ -417,7 +401,7 @@ nav a:hover {
 
   .image-section img {
       width: 90%;
-      transform: none; /* Hapus transformasi */
+      margin: 0 auto;
   }
 
   .quote {
@@ -428,7 +412,7 @@ nav a:hover {
   }
 
   .text-section h2 {
-      font-size: 20px;
+      font-size: 18px;
   }
 
   .text-section p {
@@ -437,23 +421,18 @@ nav a:hover {
 
   /* Desa Section */
   .desa-section {
-      flex-direction: column;
-      text-align: center;
       padding: 20px;
+      text-align: center;
   }
 
-  .desa-image img {
+  .desa-content img {
       width: 100%;
       max-width: 300px;
-      margin-bottom: 20px;
-  }
-
-  .desa-text {
-      margin: 0;
+      margin: 20px 0;
   }
 
   .desa-text h2 {
-      font-size: 20px;
+      font-size: 18px;
   }
 
   .desa-text p {
@@ -462,9 +441,8 @@ nav a:hover {
 
   /* UMKM Section */
   .umkm-section {
-      flex-direction: column;
-      text-align: center;
       padding: 20px;
+      text-align: center;
   }
 
   .umkm-content {
@@ -472,39 +450,22 @@ nav a:hover {
       gap: 20px;
   }
 
+  .umkm-content img {
+      width: 100%;
+      max-width: 300px;
+  }
+
   .umkm-text h2 {
-      font-size: 20px;
-      margin: 0;
+      font-size: 18px;
   }
 
   .umkm-text p {
       font-size: 14px;
   }
 
-  .umkm-image img {
-      width: 100%;
-      max-width: 300px;
-  }
-
-  /* Footer Section */
-  .footer-container {
-      flex-direction: column;
+  /* Footer adjustments */
+  footer {
       text-align: center;
-      gap: 20px;
-      padding: 20px;
-  }
-
-  .footer-links, .footer-service, .footer-social {
-      margin: 0;
-  }
-
-  .footer-social h4 {
-      margin: 10px 0;
-  }
-
-  .social-icons {
-      margin: 0 auto;
-      justify-content: center;
+      padding: 10px 20px;
   }
 }
-

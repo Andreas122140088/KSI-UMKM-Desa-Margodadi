@@ -388,10 +388,6 @@ body {
 
   .dropdown.show .dropdown-menu {
     display: block; /* Tampilkan menu dropdown saat dropdown aktif */
-
-  .who-we-are {
-      flex-direction: column;
-      padding: 20px;
   }
 
   .image-section img {

@@ -20,9 +20,18 @@
       <a href="#masuk">MASUK</a>
       <a href="#daftar">DAFTAR</a>
     </div>
+    <div class="dropdown">
+      <button class="dropdown-btn"><img src="/resources/assets/menu_icon.png" width="50" height="40"></button>
+      <div class="dropdown-menu">
+          <a href="#about">ABOUT</a>
+          <a href="#favorit">FAVORIT</a>
+          <a href="#product">PRODUCT</a>
+          <a href="#masuk">MASUK</a>
+          <a href="#daftar">DAFTAR</a>
+      </div>
   </div>
-
-
+  </div>
+  
   <div class="content">
     <div class="box">
         <img class="pic" src="/resources/assets/image-8.png">
@@ -142,33 +151,19 @@
           </div>
       </div>
     </div>
+<<<<<<< HEAD
 
     <div class="footer-bottom">
     <p>&copy; KSI-Kel 6 Copyright 2024 - All Right Reserved.</p>
     </div>
   </footer>
+=======
+>>>>>>> 19e91e392791fda49df934155c3dffb6aec7a102
 
-<script>
-  document.addEventListener("scroll", function() {
-    const navbarLinks = document.querySelectorAll(".navbar-center a");
-    const sections = document.querySelectorAll("section, .main-section");
-    let currentSection = "";
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 100;
-      if (window.scrollY >= sectionTop) {
-        currentSection = section.getAttribute("id");
-      }
-    });
-
-    navbarLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${currentSection}`) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script>
+    <div class="footer-bottom">
+    <p>&copy; KSI-Kel 6 Copyright 2024 - All Right Reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>

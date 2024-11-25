@@ -230,7 +230,7 @@ nav a:hover {
     align-items: center;
     padding: 60px 40px;
     background-color: #e8f7f3;
-    position: relative;
+*
 }
 
 .umkm-content {
@@ -378,6 +378,21 @@ nav a:hover {
 /* Responsive for Mobile */
 @media (max-width: 768px) {
   /* Header adjustments for mobile */
+  .mobile-only-btn {
+    display: block;
+    background-color: #5D2380; /* Warna ungu sesuai tema */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mobile-only-btn:hover {
+    background-color: #6F4B9B; /* Warna lebih terang untuk hover */
+}
+
   header {
       flex-direction: column;
       align-items: flex-start;
@@ -441,13 +456,12 @@ nav a:hover {
 
   /* UMKM Section */
   .umkm-section {
-      padding: 20px;
-      text-align: center;
+    background: #00c74a;
+    text-align: left;
   }
 
   .umkm-content {
-      flex-direction: column;
-      gap: 20px;
+      gap: 10px;
   }
 
   .umkm-content img {

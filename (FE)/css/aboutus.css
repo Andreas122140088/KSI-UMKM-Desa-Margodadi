@@ -389,7 +389,4 @@ body {
   .dropdown.show .dropdown-menu {
     display: block; /* Tampilkan menu dropdown saat dropdown aktif */
   }
-
- 
-
-    
+}

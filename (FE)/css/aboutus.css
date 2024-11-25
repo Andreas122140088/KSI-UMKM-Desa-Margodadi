@@ -371,103 +371,103 @@ body {
 
 /* Responsive for Mobile */
 /* Mobile Styles */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 10px 20px;
-    }
+/* Mobile Version */
+@media only screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
 
-    nav {
-        display: none; /* Sembunyikan navigasi utama */
-    }
+  .navbar-left {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+  }
 
-    .dropdown {
-        display: block; /* Tampilkan dropdown untuk navigasi */
-    }
+  .navbar-center {
+      display: none; /* Hide center navigation on small screens */
+  }
 
-    .dropdown-menu {
-        display: block;
-        position: static;
-        background-color: transparent;
-        box-shadow: none;
-        width: 100%;
-    }
+  .dropdown {
+      display: block; /* Show dropdown menu */
+  }
 
-    .dropdown-menu a {
-        display: block;
-        padding: 10px;
-        text-align: center;
-        color: black;
-    }
+  .dropdown-menu {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+  }
 
-    .logo-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .who-we-are {
+      flex-direction: column;
+      padding: 20px;
+  }
 
-    .image-section img {
-        max-width: 100%; /* Gambar menyesuaikan layar */
-        transform: none;
-    }
+  .image-section img {
+      width: 100%;
+      transform: none;
+      margin-bottom: 20px;
+  }
 
-    .quote {
-        position: static;
-        transform: none;
-        margin: 20px 0;
-        max-width: 100%;
-    }
+  .quote {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      max-width: 100%;
+      padding: 10px;
+  }
 
-    .desa-content,
-    .umkm-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .desa-section,
+  .umkm-section {
+      flex-direction: column;
+      padding: 20px;
+  }
 
-    .desa-image img,
-    .umkm-image img {
-        max-width: 80%; /* Sesuaikan ukuran gambar */
-        margin: 20px 0;
-    }
+  .desa-image img,
+  .umkm-image img {
+      max-width: 100%;
+      margin: 0;
+  }
 
-    .desa-text,
-    .umkm-text {
-        margin: 0; /* Hilangkan margin kiri dan kanan */
-    }
+  .desa-text,
+  .umkm-text {
+      margin: 20px 0;
+      max-width: 100%;
+  }
 
-    .umkm-text h2,
-    .desa-text h2 {
-        margin: 20px 0;
-    }
+  .umkm-text h2,
+  .umkm-text p,
+  .desa-text h2,
+  .desa-text p {
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+  }
 
-    footer {
-        text-align: center;
-    }
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
 
-    .footer-links ul,
-    .footer-service ul {
-        padding: 0;
-        text-align: center;
-    }
+  .footer-links,
+  .footer-service,
+  .footer-social {
+      margin: 10px 0;
+  }
 
-    .footer-links ul li,
-    .footer-service ul li {
-        display: inline-block;
-        margin: 5px 10px;
-    }
+  .footer-social h4,
+  .footer-social .social-icons {
+      margin: 0;
+      text-align: center;
+  }
 
-    .footer-social {
-        margin: 20px 0;
-    }
-
-    .footer-social h4 {
-        margin-left: 0;
-    }
-
-    .footer-bottom {
-        position: static;
-        margin: 20px 0;
-    }
+  .footer-bottom {
+      position: relative;
+      margin-top: 20px;
+      margin-left: 0;
+  }
 }
+
     

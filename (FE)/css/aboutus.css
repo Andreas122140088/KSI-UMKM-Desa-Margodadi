@@ -374,3 +374,51 @@ nav a:hover {
   margin-top: 70px;
   margin-left: 30px;
 }
+
+/* Mobile-friendly design */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav {
+      display: none; /* Sembunyikan menu navigasi besar */
+  }
+
+  .dropdown {
+      display: block; /* Tampilkan dropdown di mobile */
+  }
+
+  .who-we-are {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .image-section img {
+      width: 100%;
+      transform: none; /* Hapus transformasi */
+  }
+
+  .desa-section, .umkm-section {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .desa-text, .umkm-text {
+      margin: 0;
+      text-align: center; /* Pusatkan teks di layar kecil */
+  }
+
+  .footer-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+      text-align: center;
+  }
+
+  .social-icons {
+      margin-left: 0;
+      justify-content: center;
+  }
+}

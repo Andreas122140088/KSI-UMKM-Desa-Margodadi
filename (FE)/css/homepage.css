@@ -189,7 +189,7 @@
   .image1 {
     width: 275px;
     height: auto;
-    margin-left: 70px;
+    margin-left: 75px;
     margin-top: 60px;
   }
 
@@ -207,7 +207,7 @@
   .overlay-box {
     display: flex;
     width: 100%;
-    max-width: 487px;
+    max-width: 494px;
     height: 500px;
     background-color: #B07FCC;
     position: absolute;
@@ -266,7 +266,7 @@
   }
 
   .all-produk{
-    display: inline-block;
+    display: flex;
     align-items: center;
     position: relative;
     padding: 10px 50px;
@@ -386,3 +386,55 @@
     margin-top: 70px;
     margin-left: 30px;
   }
+
+  @media (max-width: 768px) {
+    .navbar-center {
+      display: none; /* Sembunyikan menu horizontal */
+    }
+    .dropdown {
+      display: block; /* Tampilkan dropdown */
+    }
+    .dropdown-menu {
+      display: flex; /* Perbaiki agar menu dropdown bisa dilihat */
+      flex-direction: column;
+    }
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .purple-box {
+        width: 80%;
+        height: 50%;
+        margin: 20px 0;
+        margin-top: 100px;
+    }
+    .purple-box img{
+      width: 70%;
+      height: auto;
+    }
+    .purple-box .image1{
+      position: absolute;
+      left: 20%;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .product-card {
+      margin: 10px 0; /* Kurangi margin untuk hemat ruang */
+    }
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      }
+    .footer-links,
+    .footer-service,
+    .footer-social {
+      margin: 20px 0;
+    }
+  }
+

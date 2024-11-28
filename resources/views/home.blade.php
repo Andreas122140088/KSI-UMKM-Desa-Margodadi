@@ -121,7 +121,7 @@
         <h2>Batik</h2>
         <p>Description</p>
       </div>
-      <button class="all-produk" onclick="window.location.href='/home2'">Lihat Semua</button>
+      <a href='/home2' class="all-produk btn">Lihat Semua</a>
     </section>
     
     <footer class="footer">

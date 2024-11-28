@@ -266,24 +266,23 @@
   }
 
   .all-produk{
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 10px 50px;
-    border: rgb(25, 2, 94);
-    background-color: #9a42e1;
-    border-radius: 30px;
-    color: #000000;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 20px;
+    display: flex; /* Mengaktifkan flexbox */
+    justify-content: center; /* Memposisikan tombol di tengah secara horizontal */
+    align-items: center; /* Memposisikan tombol di tengah secara vertikal */
+    margin: 0 auto; /* Memberikan margin otomatis */
+    height: calc(100vh - 10px);
     margin-left: 665px;
   }
 
   .all-produk:hover {
-    background-color: #78499e; 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
+    padding: 10px 20px; /* Memberikan ruang di dalam tombol */
+    font-size: 16px; /* Ukuran teks tombol */
+    background-color: #6a1b9a; /* Warna latar tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 10px; /* Membuat sudut tombol membulat */
+    cursor: pointer; /* Menampilkan pointer saat hover */
+    transition: background-color 0.3s ease;
   }
 
   .all-produk:active {

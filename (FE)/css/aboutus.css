@@ -389,4 +389,128 @@ body {
   .dropdown.show .dropdown-menu {
     display: block; /* Tampilkan menu dropdown saat dropdown aktif */
   }
+
+  .who-we-are {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 20px;
+    transform: none;
+  }
+
+  .quote {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+  }
+
+  .text-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .text-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Desa Section */
+  .desa-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .desa-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .desa-image img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .desa-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .desa-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .button.green {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* UMKM Section */
+  .umkm-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .umkm-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .umkm-image img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .umkm-text {
+    margin: 0;
+  }
+
+  .umkm-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .umkm-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-links,
+  .footer-service,
+  .footer-social {
+    margin: 20px 0;
+  }
+
+  .footer-links ul,
+  .footer-service ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+    margin: 10px 0 0;
+  }
 }
+
+    

@@ -96,10 +96,10 @@
         color: #6F4B9B;
       }
       
-
     main {
         display: flex;
         justify-content: center;
+        padding: 50px;
     }
 
     .container {
@@ -107,6 +107,7 @@
         border-radius: 10px;
         padding: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 500px;
     }
 
     h2 {
@@ -243,3 +244,91 @@
         display: block; /* Tampilkan menu dropdown saat dropdown aktif */
       }
     }
+    @media (max-width:450px) {
+        .content{
+          padding: 20px;
+        }
+      
+        .box-body {
+          border: 1px solid #000;
+          border-radius: 8px;
+          padding: 15px;
+          margin-top: 15px;
+          width: 370px;
+          height: 200px; 
+        }
+      
+        .footer {
+          width: 100%;
+          height: auto;
+          background-color: #333;
+          color: #fff;
+          padding: 40px 40px;
+        }
+        
+        .footer-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        
+        .footer-links h3{
+          font-size: 1rem;
+          margin-bottom: 10px;    
+        }
+        
+        .footer-links ul {
+          list-style-type: none;
+        }
+        
+        .footer-links ul li a {
+          color: #ccc;
+          text-decoration: double;
+          font-size: 1rem;
+          transition: color 0.3s ease;
+          cursor: pointer;
+        }
+        
+        .footer-service h3{
+          font-size: 1rem;
+          margin-bottom: 10px;  
+        }
+        
+        .footer-service ul{
+          list-style-type: none;
+        }
+        
+        .footer-service ul li a {
+          color: #ccc;
+          text-decoration: double;
+          font-size: 0.8rem;
+          transition: color 0.3s ease;
+          cursor: pointer;
+        }
+        
+        .footer-social {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          cursor: pointer;
+        }
+        
+        .social-icons {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          cursor: pointer;
+        }
+        
+        .footer-social h4{
+          font-size: 1rem;
+        }
+        
+        .footer-bottom {
+          position: absolute;
+          text-align: center;
+          font-size: 0.9rem;
+          color: #aaa;
+          margin-top: 20px;
+        }
+      }

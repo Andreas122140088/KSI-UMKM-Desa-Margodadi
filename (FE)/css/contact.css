@@ -94,3 +94,128 @@ body {
 .dropdown-menu a:hover {
   color: #6F4B9B;
 }
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-header {
+  display: flex;
+  background-color: #5E228B; /* Purple background */
+  color: white;
+  padding: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contact-header .image-container {
+  border: 5px solid #6D45E2; /* Border color */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-header .contact-image {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.contact-header .contact-text {
+  margin-left: 30px;
+  text-align: left;
+}
+
+.contact-header .contact-text p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #CBB6F7; /* Light Purple Text */
+}
+
+.contact-header .contact-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+  padding: 50px 0;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: left;
+}
+
+.contact-card .icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.contact-card .text {
+  margin-left: 20px;
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .contact-header .contact-text {
+      margin-left: 0;
+      margin-top: 20px;
+  }
+
+  .contact-details {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-card {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  .contact-card .text {
+      margin-left: 0;
+  }
+}

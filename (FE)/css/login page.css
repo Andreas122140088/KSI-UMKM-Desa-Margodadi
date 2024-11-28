@@ -343,6 +343,9 @@ body {
 }
 
 @media (max-width:450px) {
+  .navbar{
+    padding: 5px 10px;
+  }
   .contact-section {
     display: flex;
     align-items: center;

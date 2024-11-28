@@ -447,12 +447,13 @@ body {
   }
 
   .umkm-text {
+    width: 100%;
     margin: 0;
     max-width: 370px;
   }
 
   .umkm-text h2 {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
 
   .umkm-text p {

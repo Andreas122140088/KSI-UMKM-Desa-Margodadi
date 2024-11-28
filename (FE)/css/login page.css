@@ -162,7 +162,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #fff;
-  padding: 40px 20px;
+  padding: 100px 20px;
 }
 .info-image{
   display: flex;
@@ -215,9 +215,6 @@ body {
   font-size: 1.1rem;
   transition: color 0.3s ease;
   cursor: pointer;
-}
-
-.footer-links a{
 }
 
 .footer-service h3{
@@ -345,7 +342,7 @@ body {
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:450px) {
   .contact-section {
     display: flex;
     align-items: center;
@@ -364,43 +361,139 @@ body {
   
   .line {
     border: 0;
-    width: 50px; 
-    border-top: 3px solid #a200ff; 
+    width: 30px; 
+    border-top: 2px solid #a200ff; 
     margin-right: 5px; 
     margin-top: 5px;
   
   }
   
   .header h3 {
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #ffffff;
   }
   
   .contact-content {
-    max-width: 300px;
+    max-width: 200px;
   }
   
   .contact-content h2 {
-    font-size: 32px;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 20px;
   }
   
   .contact-content p {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.5;
   }
   
   .contact-image img {
-    max-width: 250px;
+    max-width: 150px;
+    height: 100px;
   }
 
   .info-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     background-color: #fff;
-    padding: 30px 30px;
+    padding: 20px 10px;
+  }
+  .info-image{
+    display: block;
+    padding: 10px;
+  }
+  .info-box {
+    max-width: 200px;
+    text-align: start;
+    margin: 0 20px;
+  }
+  
+  .info-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .info-box p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .footer {
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 40px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .footer-links h3{
+    font-size: 1rem;
+    margin-bottom: 10px;    
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+  }
+  
+  .footer-links ul li a {
+    color: #ccc;
+    text-decoration: double;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .footer-service h3{
+    font-size: 1rem;
+    margin-bottom: 10px;  
+  }
+  
+  .footer-service ul{
+    list-style-type: none;
+  }
+  
+  .footer-service ul li a {
+    color: #ccc;
+    text-decoration: double;
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-social h4{
+    font-size: 1rem;
+  }
+  
+  .footer-bottom {
+    position: absolute;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 20px;
   }
 }

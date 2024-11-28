@@ -219,3 +219,32 @@ body {
       margin-left: 0;
   }
 }
+
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-links,
+  .footer-service,
+  .footer-social {
+    margin: 20px 0;
+  }
+
+  .footer-links ul,
+  .footer-service ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+    margin: 10px 0 0;
+  }
+}

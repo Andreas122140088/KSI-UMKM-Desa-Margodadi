@@ -128,7 +128,7 @@ body {
 }
 
 .contact-header .image-container {
-  border: 5px solid #6D45E2; /* Border color */
+  border: auto solid #6D45E2; /* Border color */
   border-radius: 10px;
   overflow: hidden;
 }

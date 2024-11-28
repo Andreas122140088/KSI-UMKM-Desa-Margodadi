@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.site-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex: 1;
+  gap: 100px;
+  margin-right: 100px;
+}
+
+.navbar-center a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar-center a:hover {
+  color: #6F4B9B;
+}
+
+.dropdown {
+  display: none; 
+  position: relative;
+}
+
+.dropdown-btn {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  display: none; /* Tersembunyi pada layar besar */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  width: 150px;
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 5px 0;
+}
+
+.dropdown-menu a:hover {
+  color: #6F4B9B;
+}

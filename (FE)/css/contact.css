@@ -328,11 +328,11 @@ body {
   }
 
   .dropdown-menu {
-    display: none; /* Default: sembunyikan menu dropdown */
+    display: block; /* Default: sembunyikan menu dropdown */
   }
 
   .dropdown.show .dropdown-menu {
-    display: block; /* Tampilkan menu dropdown saat dropdown aktif */
+    display: none; /* Tampilkan menu dropdown saat dropdown aktif */
   }
   .info-section {
     display: flex;

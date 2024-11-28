@@ -52,7 +52,7 @@
             <div class="desa-text">
                 <h2>DESA MARGODADI</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac sem aliquet, viverra massa non, mattis nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Mauris eget leo ut ante lacinia molestie tempor vel orci. Suspendisse condimentum dapibus nibh vel interdum. Aliquam imperdiet felis at ligula rutrum, ac facilisis urna vestibulum.</p>
-                <a href="https://www.margodadi.id/" class="button green">Website Desa Margodadi</a>
+                <a href="https://www.margodadi.id/" target="_blank" class="button green">Website Desa Margodadi</a>
             </div>
         </div>
     </section>

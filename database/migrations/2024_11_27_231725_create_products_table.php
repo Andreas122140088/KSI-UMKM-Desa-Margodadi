@@ -1,10 +1,10 @@
 <?php
-
+ 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-
-class CreateProductsTable extends Migration
+ 
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,15 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('description');
-            $table->decimal('price', 10, 2);
-            $table->string('whatsapp_link');
-            $table->string('image');
+            $table->string('title');
+            $table->string('category');
+            $table->decimal('price');
+            $table->text('description')->nullable();  // Menambahkan kolom deskripsi
+            $table->string('image_url')->nullable();  // Menambahkan kolom untuk URL gambar
             $table->timestamps();
         });
     }
-
+ 
     /**
      * Reverse the migrations.
      */
@@ -29,4 +29,4 @@ class CreateProductsTable extends Migration
     {
         Schema::dropIfExists('products');
     }
-}
+};

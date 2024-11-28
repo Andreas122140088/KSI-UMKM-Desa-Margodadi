@@ -270,7 +270,7 @@
     justify-content: center; /* Memposisikan tombol di tengah secara horizontal */
     align-items: center; /* Memposisikan tombol di tengah secara vertikal */
     margin: 0 auto; /* Memberikan margin otomatis */
-    height: calc(100vh - 200px);
+    height: calc(100vh - 10px);
     margin-left: 665px;
   }
 

@@ -393,6 +393,7 @@ body {
   .contact-image img {
     max-width: 150px;
     height: 100px;
+    margin-right: 20px;
   }
 
   .info-section {

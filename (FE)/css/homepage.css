@@ -10,7 +10,6 @@
   }
 
   body {
-    overflow-y: auto;
     background-color: #ffffff;
   }
   
@@ -270,8 +269,12 @@
     justify-content: center; /* Memposisikan tombol di tengah secara horizontal */
     align-items: center; /* Memposisikan tombol di tengah secara vertikal */
     margin: 0 auto; /* Memberikan margin otomatis */
-    height: calc(100vh - 10px);
-    margin-left: 665px;
+    padding: 10px 20px; /* Memberikan ruang di dalam tombol */
+    background-color: #ffffff; /* Warna latar tombol */
+    font-size: 16px; /* Ukuran teks tombol */
+    border-color: 10px rgba(122, 0, 0, 0.1);
+    cursor: pointer; /* Menampilkan pointer saat hover */
+    border-radius: 10px;
   }
 
   .all-produk:hover {
@@ -280,8 +283,8 @@
     background-color: #6a1b9a; /* Warna latar tombol */
     color: white; /* Warna teks tombol */
     border: none; /* Menghilangkan border */
-    border-radius: 10px; /* Membuat sudut tombol membulat */
     cursor: pointer; /* Menampilkan pointer saat hover */
+    border-radius: 10px;
     transition: background-color 0.3s ease;
   }
 
@@ -296,30 +299,23 @@
     height: 300px;
     background-color: #333;
     color: #fff;
-    margin-top: 40px;
+    padding: 40px 40px;
   }
-
+  
   .footer-container {
     display: flex;
-    align-items: flex-start;
+    justify-content: space-between;
   }
-
-  .footer-links{
-    margin-left: 40px;
-    margin-top: 50px;
-  }
-
+  
   .footer-links h3{
     font-size: 1.2rem;
-    text-align: left;
     margin-bottom: 10px;    
   }
-
+  
   .footer-links ul {
     list-style-type: none;
-    margin-top: 30px;
   }
-
+  
   .footer-links ul li a {
     color: #ccc;
     text-decoration: double;
@@ -327,27 +323,16 @@
     transition: color 0.3s ease;
     cursor: pointer;
   }
-
-  .footer-links a{
-    margin-top: 20px;
-  }
-
-  .footer-service{
-    margin-top: 50px;
-    margin-left: 150px;
-  }
-
+  
   .footer-service h3{
     font-size: 1.2rem;
-    text-align: left;
+    margin-bottom: 10px;  
   }
-
+  
   .footer-service ul{
     list-style-type: none;
-    padding: 10px;
-    margin-top: 30px;
   }
-
+  
   .footer-service ul li a {
     color: #ccc;
     text-decoration: double;
@@ -355,47 +340,52 @@
     transition: color 0.3s ease;
     cursor: pointer;
   }
-
-  .footer-social .social-icons {
+  
+  .footer-social {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
     gap: 10px;
-    margin-top: 30px;
-    margin-left: 350px;
     cursor: pointer;
   }
-
-  .social-icons img{
-    width: 20px;
-    height: auto;
-    margin-left: 200px;
+  
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
   }
-
+  
   .footer-social h4{
     font-size: 1.2rem;
-    margin-top: 50px;
-    margin-left: 550px;
   }
-
+  
   .footer-bottom {
     position: absolute;
     text-align: center;
     font-size: 0.9rem;
     color: #aaa;
-    margin-top: 70px;
-    margin-left: 30px;
+    margin-top: 100px;
   }
 
   @media (max-width: 768px) {
     .navbar-center {
-      display: none; /* Sembunyikan menu horizontal */
+      display: none; /* Sembunyikan menu utama */
     }
+  
     .dropdown {
       display: block; /* Tampilkan dropdown */
     }
+  
+    .dropdown-btn {
+      display: block; /* Tampilkan tombol dropdown */
+    }
+  
     .dropdown-menu {
-      display: flex; /* Perbaiki agar menu dropdown bisa dilihat */
-      flex-direction: column;
+      display: none; /* Default: sembunyikan menu dropdown */
+    }
+  
+    .dropdown.show .dropdown-menu {
+      display: block; /* Tampilkan menu dropdown saat dropdown aktif */
     }
     .main-section {
         flex-direction: column;
@@ -425,15 +415,78 @@
     .product-card {
       margin: 10px 0; /* Kurangi margin untuk hemat ruang */
     }
+    .footer {
+      width: 100%;
+      height: auto;
+      background-color: #333;
+      color: #fff;
+      padding: 40px 40px;
+    }
+    
     .footer-container {
+      display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
-      }
-    .footer-links,
-    .footer-service,
+      justify-content: space-between;
+    }
+    
+    .footer-links h3{
+      font-size: 1rem;
+      margin-bottom: 10px;    
+    }
+    
+    .footer-links ul {
+      list-style-type: none;
+    }
+    
+    .footer-links ul li a {
+      color: #ccc;
+      text-decoration: double;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .footer-service h3{
+      font-size: 1rem;
+      margin-bottom: 10px;  
+    }
+    
+    .footer-service ul{
+      list-style-type: none;
+    }
+    
+    .footer-service ul li a {
+      color: #ccc;
+      text-decoration: double;
+      font-size: 0.8rem;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+    
     .footer-social {
-      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      cursor: pointer;
+    }
+    
+    .social-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      cursor: pointer;
+    }
+    
+    .footer-social h4{
+      font-size: 1rem;
+    }
+    
+    .footer-bottom {
+      position: absolute;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 20px;
     }
   }
 

@@ -274,6 +274,7 @@
     color: #aaa;
     margin-top: 100px;
   }
+
 @media (max-width:800px) {
   .navbar-center {
     display: none; /* Sembunyikan menu utama */
@@ -304,41 +305,35 @@
     margin: 0;
     width: 100%;
   }
-}
-@media (max-width:450px) {
-  .content{
-    padding: 20px;
-  }
-
-  .box-body {
-    border: 1px solid #000;
-    border-radius: 8px;
-    padding: 15px;
-    margin-top: 15px;
-    width: 370px;
-    height: 200px; 
-  }
-
   .footer {
     width: 100%;
     height: auto;
+    min-height: 150px;
     background-color: #333;
+    padding: 20px 10px;
     color: #fff;
-    padding: 40px 40px;
   }
-  
+
   .footer-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .footer-links h3{
     font-size: 1rem;
+    display: none;
     margin-bottom: 10px;    
   }
   
   .footer-links ul {
+    display: none; 
     list-style-type: none;
   }
   
@@ -351,11 +346,13 @@
   }
   
   .footer-service h3{
+    display: none; 
     font-size: 1rem;
     margin-bottom: 10px;  
   }
   
   .footer-service ul{
+    display: none; 
     list-style-type: none;
   }
   
@@ -392,4 +389,19 @@
     color: #aaa;
     margin-top: 20px;
   }
+}
+@media (max-width:450px) {
+  .content{
+    padding: 20px;
+  }
+
+  .box-body {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    width: auto;
+    height: 200px; 
+  }
+  
 }

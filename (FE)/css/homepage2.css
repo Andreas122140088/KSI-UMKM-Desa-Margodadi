@@ -156,28 +156,21 @@ body {
   height: 300px;
   background-color: #333;
   color: #fff;
-  margin-top: 40px;
+  padding: 40px 40px;
 }
 
 .footer-container {
   display: flex;
-  align-items: flex-start;
-}
-
-.footer-links{
-  margin-left: 40px;
-  margin-top: 50px;
+  justify-content: space-between;
 }
 
 .footer-links h3{
   font-size: 1.2rem;
-  text-align: left;
   margin-bottom: 10px;    
 }
 
 .footer-links ul {
   list-style-type: none;
-  margin-top: 30px;
 }
 
 .footer-links ul li a {
@@ -188,24 +181,13 @@ body {
   cursor: pointer;
 }
 
-.footer-links a{
-  margin-top: 20px;
-}
-
-.footer-service{
-  margin-top: 50px;
-  margin-left: 150px;
-}
-
 .footer-service h3{
   font-size: 1.2rem;
-  text-align: left;
+  margin-bottom: 10px;  
 }
 
 .footer-service ul{
   list-style-type: none;
-  padding: 10px;
-  margin-top: 30px;
 }
 
 .footer-service ul li a {
@@ -216,26 +198,22 @@ body {
   cursor: pointer;
 }
 
-.footer-social .social-icons {
+.footer-social {
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  margin-top: 30px;
-  margin-left: 350px;
   cursor: pointer;
-  align-items: center;
 }
 
-.social-icons img{
-  width: 20px;
-  height: auto;
-  margin-left: 200px;
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
 }
-
 
 .footer-social h4{
   font-size: 1.2rem;
-  margin-top: 50px;
-  margin-left: 550px;
 }
 
 .footer-bottom {
@@ -243,6 +221,113 @@ body {
   text-align: center;
   font-size: 0.9rem;
   color: #aaa;
-  margin-top: 70px;
-  margin-left: 30px;
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .navbar{
+    padding: 5px 10px;
+  }
+  .navbar-center {
+    display: none; /* Sembunyikan menu utama */
+  }
+
+  .dropdown {
+    display: block; /* Tampilkan dropdown */
+  }
+
+  .dropdown-btn {
+    display: block; /* Tampilkan tombol dropdown */
+  }
+
+  .dropdown-menu {
+    display: none; /* Default: sembunyikan menu dropdown */
+  }
+
+  .dropdown.show .dropdown-menu {
+    display: block; /* Tampilkan menu dropdown saat dropdown aktif */
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .product-card {
+    margin: 10px 0; /* Kurangi margin untuk hemat ruang */
+  }
+  .learn-more-button {
+   margin-bottom: 30px;
+  }
+  .footer {
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 40px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .footer-links h3{
+    font-size: 1rem;
+    margin-bottom: 10px;    
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+  }
+  
+  .footer-links ul li a {
+    color: #ccc;
+    text-decoration: double;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .footer-service h3{
+    font-size: 1rem;
+    margin-bottom: 10px;  
+  }
+  
+  .footer-service ul{
+    list-style-type: none;
+  }
+  
+  .footer-service ul li a {
+    color: #ccc;
+    text-decoration: double;
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-social h4{
+    font-size: 1rem;
+  }
+  
+  .footer-bottom {
+    position: absolute;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 20px;
+  }
 }

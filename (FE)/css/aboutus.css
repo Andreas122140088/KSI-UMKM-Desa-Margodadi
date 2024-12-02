@@ -1,3 +1,4 @@
+/* cek bagian umkm */
 * {
     margin: 0;
     padding: 0;
@@ -186,7 +187,7 @@ body {
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    gap: 40px;
+    gap: 80px;
 }
 
 .desa-image img {
@@ -229,13 +230,14 @@ body {
 .umkm-section {
   display: flex;
   justify-content: center;
-  padding: 60px 40px;
+  padding: 40px 40px;
   background-color: #e8f7f3;
 }
 
 .umkm-content {
   display: flex;
-  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
   padding: 20px;
 }
 
@@ -265,6 +267,7 @@ body {
 .umkm-image img {
     width: 100%;
     border-radius: 20px;
+
 }
 
 /* Footer */
@@ -343,6 +346,9 @@ body {
 
 /* Mobile Version */
 @media only screen and (max-width: 768px) {
+  .navbar{
+    padding: 5px 10px;
+  }
   .navbar-center {
     display: none; /* Sembunyikan menu utama */
   }

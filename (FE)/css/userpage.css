@@ -1,3 +1,4 @@
+/* ini cek aja dewek */
 *{
   margin: 0;
   padding: 0;
@@ -245,7 +246,11 @@ body {
     margin-top: 100px;
   }
 
-  @media (max-width:800px) {
+  @media (max-width:768px) {
+    .navbar{
+      padding: 5px 10px;
+    }
+    
     .navbar-center {
       display: none; /* Sembunyikan menu utama */
     }
@@ -273,7 +278,7 @@ body {
       height: auto;
       min-height: 150px;
       background-color: #333;
-      padding: 20px 10px;
+      padding: 20px 20px;
       color: #fff;
     }
   

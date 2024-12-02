@@ -39,19 +39,27 @@
         <button class="view-more-button">View More</button>
         <button class="learn-more-button">UMKM</button>
       </div>
-      
+    
+      <div class="overlay-box">
       <div class="purple-box">
+        <!-- Left Arrow -->
         <div class="left-arrow" onclick="prevImage()">
-          <img src="/public/img/prev.png" class="left-arrow">
+          <img src="/public/img/prev.png" class="left-arrow" />
         </div>
-        <img src="/public/img/rengginang.jpeg" class="image1" id="carousel-image">
-        <div class="right-arrow" onclick="nextImage()"> 
-          <img src="/public/img/next.png" class="right-arrow">
+    
+        <!-- Carousel Image -->
+        <img src="/public/img/rengginang.jpeg" class="image1" id="carousel-image" />
+    
+        <!-- Right Arrow -->
+        <div class="right-arrow" onclick="nextImage()">
+          <img src="/public/img/next.png" class="right-arrow" />
         </div>
+    
+        <!-- Overlay Box -->
       </div>
-      <div class="overlay-box"></div> 
+     </div>
     </div>
-  
+    
     <script>
       const images = [
         "/public/img/rengginang.jpeg",

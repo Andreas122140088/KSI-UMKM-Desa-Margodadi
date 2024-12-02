@@ -37,9 +37,7 @@
             <p class="product-name">Nama Produk</p>
             <p class="price">Rp 20.000</p>
           <p class="viewer">1.330x dilihat</p>
-            <div class="box-body">
-                <p class="text">Deskripsi Singkat</p>
-            </div>
+                <div class="text">Deskripsi Singkat</div>
             <div class="button-container">
                 <button class="back">KEMBALI</button>		
                 <button class="whatsapp">WHATSAPP</button>
@@ -50,6 +48,13 @@
     </div>
   </div>
   
+  <script>
+    document.querySelector('.dropdown-btn').addEventListener('click', function() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.classList.toggle('open');
+    });
+    
+  </script>
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-links">

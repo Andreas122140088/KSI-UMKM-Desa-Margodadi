@@ -257,10 +257,10 @@ body {
   }
   .footer {
     width: 100%;
-    height: auto;
+    height: 150px;
     background-color: #333;
-    color: #fff;
-    padding: 40px 40px;
+    color: #ffffff;
+    padding: 20px 20px;
   }
   
   .footer-container {
@@ -270,6 +270,7 @@ body {
   }
   
   .footer-links h3{
+    display: none;
     font-size: 1rem;
     margin-bottom: 10px;    
   }
@@ -279,6 +280,7 @@ body {
   }
   
   .footer-links ul li a {
+    display: none;
     color: #ccc;
     text-decoration: double;
     font-size: 1rem;
@@ -287,15 +289,18 @@ body {
   }
   
   .footer-service h3{
+    display: none;
     font-size: 1rem;
     margin-bottom: 10px;  
   }
   
   .footer-service ul{
+    display: none;
     list-style-type: none;
   }
   
   .footer-service ul li a {
+    display: none;
     color: #ccc;
     text-decoration: double;
     font-size: 0.8rem;

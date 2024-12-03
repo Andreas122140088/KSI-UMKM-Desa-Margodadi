@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detail Produk</title>
+  <title>Detail Produk - UMKM Desa Margodadi</title>
   <link rel="stylesheet" href="/(FE)/css/detail.css">
 </head>
 <body >
@@ -29,9 +29,21 @@
   </div>
 
   <div class="content">
-    <div class="box">
-        <img class="pic" src="/public/img/image-8.png">
-        </div>
+    <div class="image-container">
+      <div class="box">
+          <img class="pic" src="/public/img/image-13.png" alt="Gambar 1" data-full="/public/img/image-1-large.png">
+          <img class="pic" src="/public/img/image-13.png" alt="Gambar 2" data-full="/public/img/image-2-large.png">
+          <img class="pic" src="/public/img/image-13.png" alt="Gambar 3" data-full="/public/img/image-3-large.png">
+      </div>
+  </div>
+  
+  <!-- Modal untuk memperbesar gambar -->
+  <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+  </div>
+  
         <div class="box">
         <div class="product">
             <p class="product-name">Nama Produk</p>

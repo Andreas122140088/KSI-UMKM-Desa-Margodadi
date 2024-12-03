@@ -166,20 +166,19 @@ body {
 }
 .info-image{
   display: flex;
-  padding: 20px;
+  align-items: flex-start;
+  margin: 0 20px;
 }
 .info-box {
   max-width: 300px;
   text-align: start;
   margin: 0 50px;
 }
-
 .info-box h2 {
   font-size: 20px;
   margin-bottom: 10px;
   color: #333;
 }
-
 .info-box p {
   font-size: 16px;
   color: #666;
@@ -334,6 +333,11 @@ body {
   .dropdown.show .dropdown-menu {
     display: block; /* Tampilkan menu dropdown saat dropdown aktif */
   }
+  .info-image{
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+  }
   .info-section {
     display: flex;
     justify-content: center;
@@ -401,7 +405,7 @@ body {
 
   .info-section {
     display: flex;
-    flex-direction: column;
+    
     background-color: #fff;
     padding: 20px 10px;
   }

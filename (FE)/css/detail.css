@@ -93,37 +93,35 @@
 
 .content {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   padding: 80px;
 }
 
-/* Container untuk gambar-gambar */
 .image-container {
   display: flex;
-  justify-content: flex-end; /* Memindahkan gambar-gambar ke kanan */
-  gap: 10px; /* Memberikan jarak antara gambar */
+  justify-content: flex-end; 
+  gap: 10px; 
   margin-top: 20px;
 }
 
-/* Styling untuk masing-masing gambar */
 .box {
   display: inline-block;
 }
 
 .pic {
-  width: 150px; /* Ukuran gambar kecil */
+  width: 150px; 
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .pic:hover {
-  transform: scale(1.1); /* Efek hover saat gambar diklik */
+  transform: scale(2); 
 }
 
-/* Styling modal */
 .modal {
-  display: none; /* Modal disembunyikan secara default */
+  display: none; 
   position: fixed;
   z-index: 1;
   padding-top: 100px;
@@ -343,9 +341,25 @@
   .dropdown.show .dropdown-menu {
     display: block; /* Tampilkan menu dropdown saat dropdown aktif */
   }
+  .image-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px;
+  }
   .content{
     flex-direction: column;
   }
+  .pic {
+    width: 125px; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .pic:hover {
+    transform: scale(2); 
+  }
+  
   .product {
     display: flex;
     flex-direction: column;

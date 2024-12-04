@@ -220,6 +220,9 @@
     position: absolute;
   }
 
+  .product-grid{
+    justify-content: space-between;
+  }
   .product-card {
     display: inline-block;
     max-width: 300px;

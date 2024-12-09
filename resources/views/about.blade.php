@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detail Produk</title>
+  <title>UMKM Desa Margodadi</title>
   <link rel="stylesheet" href="/css/aboutus.css">
 </head>
 <body >
@@ -14,16 +14,16 @@
       <h1 class="site-name">UMKM<br> DESA MARGODADI</h1>
     </div>
     <div class="navbar-center">
-      <a href="/about">ABOUT</a>
-      <a href="/product">PRODUCT</a>
-      <a href="/contact">CONTACT</a>
+      <a href='about'>ABOUT</a>
+      <a href='product'>PRODUCT</a>
+      <a href='contact'>CONTACT</a>
     </div>
     <div class="dropdown">
       <button class="dropdown-btn"><img src="/img/menu_icon.png" width="50" height="40"></button>
       <div class="dropdown-menu">
-          <a href="/about">ABOUT</a>
-          <a href="/product">PRODUCT</a>
-          <a href="/contact">CONTACT</a>
+          <a href='about'>ABOUT</a>
+          <a href='product'>PRODUCT</a>
+          <a href='contact'>CONTACT</a>
       </div>
   </div>
   </div>
@@ -51,8 +51,17 @@
             </div>
             <div class="desa-text">
                 <h2>DESA MARGODADI</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac sem aliquet, viverra massa non, mattis nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Mauris eget leo ut ante lacinia molestie tempor vel orci. Suspendisse condimentum dapibus nibh vel interdum. Aliquam imperdiet felis at ligula rutrum, ac facilisis urna vestibulum.</p>
-                <a href="https://www.margodadi.id/" target="_blank" class="button green">Website Desa Margodadi</a>
+                <p>Desa Margodadi awalnya terdiri dari 4 Dusun, Adapaun Nama Nama Dusun Pada Awal kedatangannya adalah Dusun Roto Jajar, Dusun Margodadi, Dusun Sumber Rejo dan Dusun Sudi Moro kemudian dusun itu berubah menjadi Dusun 1 (Satu) sampai dengan 4 (Empat).
+
+                  Lalu Sekitar Tahun 2002 terjadi pemekaran Dusun, Dusun Satu dimekaran menjadi dua dusun, yaitu Dusun 1 (Satu) dan Dusun 5 (Lima).
+                  
+                  Dusun Roto Jajar pada era saat ini lebih dikenal dengan nama Dusun 5, Dusun Margodadi saat ini dikenal dengan Dusun 1, Dusun Sumber Rejo menjadi Dusun 2 dan Dusun Sudi Moro Menjadi Dusun 3 dan Dusun 4
+                  
+                  Pada awal Transmigrasi secara administrasi Desa Margodadi termasuk dalam wilayah kecamatan Natar. Beberapa tahun kemudian dipindahkan ke kecamatan Balau Kedaton kabupaten Lampung Selatan. Dan beberapa tahun kemudian pengembangan kecamatan masuk ke kecamatan Tanjung Bintang, tidak lama kemudian ikut pemekaran kecamatan menjadi Kecamatan Jati Agung sampai sekarang.
+                  
+                  Namun walaupun desa margodadi ini merupakan desa transmigrasi tetapi penduduknya saat ini sudah terdiri dari bermacam macam suku. Diantaranya Jawa, Lampung, Padang, Sunda, Palembang. Hal ini membuat Desa Margodadi semakin cepat berkembang baik dalam dunia perekonomian maupun seni budaya.
+                  </p>
+                <a href="https://www.margodadi.id" class="button green" target="_blank">Website Desa Margodadi</a>
             </div>
         </div>
     </section>
@@ -62,7 +71,6 @@
             <div class="umkm-text">
                 <h2>UMKM DESA MARGODADI</h2>
                 <p>UMKM Desa Margodadi merupakan usaha mikro, kecil, dan menengah yang berkembang di wilayah tersebut dengan fokus pada pemberdayaan ekonomi lokal. Berbagai produk unggulan dari desa ini, seperti kerajinan tangan, produk pertanian olahan, dan makanan khas, dihasilkan oleh masyarakat setempat dengan memanfaatkan sumber daya alam yang ada. UMKM di Desa Margodadi tidak hanya memberikan peluang kerja bagi warga, tetapi juga berperan dalam meningkatkan kesejahteraan ekonomi dan mendorong kreativitas serta inovasi lokal. Dengan dukungan berbagai pihak, UMKM ini berpotensi untuk berkembang lebih luas dan menembus pasar yang lebih besar.</p>
-                <div class="button-group">       
             </div>
             <div class="umkm-image">
                 <img src="/img/gambar3.jpg" alt="UMKM Desa Margodadi">
@@ -70,23 +78,21 @@
         </div>
     </section>
     
-    <!-- Footer Section -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-links">
           <h3>QUICK LINKS</h3>
-            <ul>
-              <li><a href="/home">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/product">Product</a></li>
-            </ul>
+          <ul>
+            <li><a href='home'>Home</a></li>
+            <li><a href='about'>About</a></li>
+            <li><a href='contact'>Contact</a></li>
+          </ul>
         </div>
         <div class="footer-service">
           <h3>SERVICES</h3>
             <ul>
-              <li><a href="#profile">Profile Desa</a></li>
-              <li><a href="/umkm">UMKM</a></li>
+              <li><a href="https://www.margodadi.id" target="_blank">Profile Desa</a></li>
+              <li><a href='home'>UMKM</a></li>
             </ul>
         </div>
         <div class="footer-social">
@@ -94,7 +100,7 @@
             <div class="social-icons">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="call" viewBox="0 0 16 16">
                 <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-              </svg><p>Phone: (234) 0800-000-0000</p>
+              </svg><p>Phone: (+62)-821-7502-5224</p>
               </div>
              
             <div class="social-icons">

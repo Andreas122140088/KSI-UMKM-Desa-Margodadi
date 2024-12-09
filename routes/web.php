@@ -5,11 +5,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
  
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/homepage', function () {
+Route::get('/home2', function () {
     return view('home2');
 });
 

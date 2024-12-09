@@ -221,7 +221,7 @@
   }
 
   .product-grid{
-    justify-content: space-between;
+    justify-content: center;
   }
   .product-card {
     display: inline-block;

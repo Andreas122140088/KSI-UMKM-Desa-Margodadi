@@ -14,19 +14,19 @@
                     <hr />
                     @if (session()->has('error'))
                     <div>
-                        {{session('error')}}
+                        {{ session('error') }}
                     </div>
                     @endif
                      
                     <p><a href="{{ route('admin/products') }}" class="btn btn-primary">Go Back</a></p>
- 
+
                     <form action="{{ route('admin/products/save') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row mb-3">
                             <div class="col">
                                 <input type="text" name="title" class="form-control" placeholder="Title">
                                 @error('title')
-                                <span class="text-danger">{{$message}}</span>
+                                <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                         </div>
@@ -34,7 +34,7 @@
                             <div class="col">
                                 <input type="text" name="category" class="form-control" placeholder="Category">
                                 @error('category')
-                                <span class="text-danger">{{$message}}</span>
+                                <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                         </div>
@@ -42,29 +42,33 @@
                             <div class="col">
                                 <input type="text" name="price" class="form-control" placeholder="Price">
                                 @error('price')
-                                <span class="text-danger">{{$message}}</span>
+                                <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col">
-                                <textarea name="description" class="form-control" placeholder="Description" rows="4"></textarea>
+                                <textarea name="description" class="form-control" placeholder="Description"></textarea>
                                 @error('description')
-                                <span class="text-danger">{{$message}}</span>
+                                <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                         </div>
+                        
+                        <!-- Input untuk Gambar -->
                         <div class="row mb-3">
                             <div class="col">
-                                <input type="file" name="image" class="form-control" accept="image/*">
+                                <label for="image" class="form-label">Product Image</label>
+                                <input type="file" name="image" id="image" class="form-control" accept="image/*">
                                 @error('image')
-                                <span class="text-danger">{{$message}}</span>
+                                <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="d-grid">
-                                <button class="btn btn-primary">Submit</button>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <button type="submit" class="btn btn-success">Save Product</button>
                             </div>
                         </div>
                     </form>

@@ -36,8 +36,8 @@
         <h2>PRODUK UMKM</h2>
         <h2>DESA MARGODADI</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-        <button class="view-more-button">View More</button>
-        <button class="learn-more-button">UMKM</button>
+        <button class="view-more-button" onclick="window.location.href='home2'">View More</button>
+        <button class="learn-more-button" onclick="window.location.href='home'">UMKM</button>
       </div>
     
       <div class="overlay-box">
@@ -89,55 +89,20 @@
     </script>
   
     <section class="product-grid">
+      @foreach ($products as $product)
       <div class="product-card">
-        <img src="/img/rengginang.jpeg" class="product">
-        <img src="/img/favorite_icon.png" class="heart">
-        <h2>Batik</p></h2>
-        <p>Description</p>
+        <a href="/product/{{$product->id}}">
+          @if($product->image_url)
+            <img src={{ Storage::url($product->image_url) }} class="product">
+          @else
+            <span>No Image</span>
+          @endif
+          <img src="/img/favorite_icon.png" class="heart">
+          <h2>{{$product->title}}</p></h2>
+          <p>{{$product->category}}</p>
+        </a>
       </div>
-      <div class="product-card">
-        <img src="/img/rengginang.jpeg" class="product">
-        <img src="/img/favorite_icon.png" class="heart">
-        <h2>Rengginang</p></h2>
-        <p>Description</p>
-      </div>
-      <div class="product-card">
-        <img src="/img/rengginang.jpeg" class="product">
-        <img src="/img/favorite_icon.png" class="heart">
-        <h2>Kerajinan Tangan</h2>
-        <p>Product Description</p>
-      </div>
-      <div class="product-card">
-        <img src="/img/rengginang.jpeg" class="product">
-        <img src="/img/favorite_icon.png" class="heart">
-        <h2>Batik</h2>
-        <p>Description</p>
-      </div>
-      <div class="product-card">
-        <img src="/img/rengginang.jpeg" class="product">
-        <img src="/img/favorite_icon.png" class="heart">
-        <h2>Batik</h2>
-        <p>Description</p>
-      </div>
-      <div class="product-card">
-        <img src="/img/rengginang.jpeg" class="product">
-        <img src="/img/favorite_icon.png" class="heart">
-        <h2>Batik</h2>
-        <p>Description</p>
-      </div>
-      <div class="product-card">
-        <img src="/img/rengginang.jpeg" class="product">
-        <img src="/img/favorite_icon.png" class="heart">
-        <h2>Batik</h2>
-        <p>Description</p>
-      </div>
-      <div class="product-card">
-        <img src="/img/rengginang.jpeg" class="product">
-        <img src="/img/favorite_icon.png" class="heart">
-        <h2>Batik</h2>
-        <p>Description</p>
-      </div>
-      <button class="all-produk" onclick="window.location.href='home2'">Lihat Semua</button>
+      @endforeach
     </section>
     
     <footer class="footer">

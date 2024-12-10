@@ -107,6 +107,7 @@
 
 .box {
   display: inline-block;
+  padding: 0px 50px;
 }
 
 .pic {
@@ -348,6 +349,7 @@
   }
   .content{
     flex-direction: column;
+    padding:0 20px;
   }
   .pic {
     width: 125px; 

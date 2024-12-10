@@ -33,7 +33,7 @@ class ProductController extends Controller
     
         // Upload Image
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('public/images');
+            $imagePath = $request->file('image')->store('products', 'public');
             $validation['image_url'] = str_replace('public/', 'storage/', $imagePath); // Update path
         }
         
@@ -82,7 +82,7 @@ class ProductController extends Controller
         }
         
         // Menyimpan gambar baru
-        $path = $request->file('image')->store('public/img');
+        $path = $request->file('image')->store('products', 'public');
         $product->image_url = $path;  // Menyimpan path gambar baru
     }
 

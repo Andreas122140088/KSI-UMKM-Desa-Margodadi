@@ -4,12 +4,14 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
- 
+use App\Models\Product;
+
 Route::get('/home', function () {
-    return view('home');
+    $products=Product::all();
+    return view('home')->with('products',$products);
 });
 
-Route::get('/home2', function () {
+Route::get('/product', function () {
     return view('home2');
 });
 
@@ -17,8 +19,9 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/product', function () {
-    return view('product');
+Route::get('/product/{id}', function ($id) {
+    $product=Product::find($id);
+    return view('product')->with('product',$product);;
 });
 
 Route::get('/contact', function () {
@@ -46,8 +49,15 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::put('/admin/products/edit/{id}', [ProductController::class, 'update'])->name('admin/products/update');
     Route::get('/admin/products/delete/{id}', [ProductController::class, 'delete'])->name('admin/products/delete');
 });
- 
+
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin/statistics', [App\Http\Controllers\Admin\StatisticsController::class, 'index'])->name('admin.statistics.index');
+    Route::get('/admin/products', [App\Http\Controllers\ProductController::class, 'index'])->name('admin/products');
+});
+
+Route::middleware('track.visitors')->group(function () {
+    Route::get('/', [HomeController::class, 'index']);
+    // Tambahkan route lainnya yang ingin Anda track
+});
+
 require __DIR__.'/auth.php';
- 
-//Route::get('admin/dashboard', [HomeController::class, 'index']);
-//Route::get('admin/dashboard', [HomeController::class, 'index'])->middleware(['auth', 'admin']);

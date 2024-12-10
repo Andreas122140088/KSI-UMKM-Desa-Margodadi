@@ -221,9 +221,14 @@ z-index: 0;
 }
 
 .product-grid{
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Mengatur jarak antar elemen secara horizontal dan vertikal */
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.product-card {
+
+.product-card a {
   display: inline-block;
   max-width: 300px;
   width: 100%;
@@ -236,10 +241,12 @@ z-index: 0;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   border: 2px solid #ddd;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 5px;
+  text-decoration: none;
+  color: black;
 }
 
 .product{

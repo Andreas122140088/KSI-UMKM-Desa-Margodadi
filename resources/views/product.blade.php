@@ -46,8 +46,8 @@
   
         <div class="box">
         <div class="product">
-            <p class="product-name">Nama Produk</p>
-            <p class="price">Rp 20.000</p>
+            <p class="product-name">{{$product->title}}</p>
+            <p class="price">Rp.{{$product->price}}</p>
           <p class="viewer">1.330x dilihat</p>
                 <div class="text">Deskripsi Singkat</div>
             <div class="button-container">

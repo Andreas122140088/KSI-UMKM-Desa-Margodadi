@@ -28,16 +28,30 @@ class ProductController extends Controller
             'category' => 'required|string|max:255',
             'price' => 'required|numeric',
             'description' => 'required|string',
+            'whatsapp' => 'required|string|max:15',
             'image' => 'nullable|image|mimes:jpg,jpeg,png,gif,svg|max:2048',
         ]);
-    
+
         // Upload Image
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('products', 'public');
             $validation['image_url'] = str_replace('public/', 'storage/', $imagePath); // Update path
         }
-        
+        $price = str_replace(',', '.', $request->price);
+        $price = (float) $price;
+
+        $product = new Product();
+        $product->title = $request->title;
+        $product->category = $request->category;
+        $product->price = $price;
+        $product->description = $request->description;
+        $product->whatsapp = $request->whatsapp;  // Menyimpan nomor WhatsApp
+        $product->image_url = $validation['image_url'] ?? null; // Menyimpan image_url jika ada
+        $product->save();
+        return redirect()->route('admin/products')->with('success', 'Product created successfully');
+
         $data = Product::create($validation);
+        
         if ($data) {
             session()->flash('success', 'Product Add Successfully');
             return redirect(route('admin/products'));
@@ -55,13 +69,14 @@ class ProductController extends Controller
     
 
     public function update(Request $request, $id)
-{
+    {
     // Validasi inputan
     $request->validate([
         'title' => 'required|string|max:255',
         'category' => 'required|string|max:255',
         'price' => 'required|numeric',
         'description' => 'required|string',
+        'whatsapp' => 'required|string|max:15',
         'image' => 'nullable|image|mimes:jpg,jpeg,png,gif,svg|max:2048',  // Validasi gambar
     ]);
 
@@ -73,6 +88,7 @@ class ProductController extends Controller
     $product->category = $request->category;
     $product->price = $request->price;
     $product->description = $request->description;
+    $product->whatsapp = $request->whatsapp; 
 
     // Mengecek apakah gambar baru diunggah
     if ($request->hasFile('image')) {

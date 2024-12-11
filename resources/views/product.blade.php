@@ -31,9 +31,12 @@
   <div class="content">
     <div class="image-container">
       <div class="box">
-          <img class="pic" src="/img/image-13.png" alt="Gambar 1" data-full="/img/image-1-large.png">
-          <img class="pic" src="/img/image-13.png" alt="Gambar 2" data-full="/img/image-2-large.png">
-          <img class="pic" src="/img/image-13.png" alt="Gambar 3" data-full="/img/image-3-large.png">
+        @if($product->image_url)
+            <img class="pic" src={{ Storage::url($product->image_url) }} class="product">
+          @else
+            <span>No Image</span>
+          @endif
+          {{-- <img class="pic" src="/img/image-13.png" alt="Gambar 1" data-full="/img/image-1-large.png"> --}}
       </div>
   </div>
   
@@ -44,20 +47,25 @@
       <div id="caption"></div>
   </div>
   
-        <div class="box">
+      <div class="box">
         <div class="product">
             <p class="product-name">{{$product->title}}</p>
             <p class="price">Rp.{{$product->price}}</p>
-          <p class="viewer">1.330x dilihat</p>
-                <div class="text">Deskripsi Singkat</div>
+                <div class="text">{{$product->description}}</div>
             <div class="button-container">
-                <button class="back">KEMBALI</button>		
-                <button class="whatsapp">WHATSAPP</button>
+                <button class="back" onclick="goBack()">KEMBALI</button>
+                <button class="whatsapp" onclick="window.open('https://wa.me/{{ $product->whatsapp }}', '_blank')">Chat di WhatsApp</button>
             </div>
         </div>
       </div>
     </div>
   
+  <script>
+    function goBack() {
+    window.history.back(); // Ini akan membawa pengguna ke halaman sebelumnya
+  }
+  </script>
+
   <script>
     document.querySelector('.dropdown-btn').addEventListener('click', function() {
       var dropdown = document.querySelector('.dropdown');

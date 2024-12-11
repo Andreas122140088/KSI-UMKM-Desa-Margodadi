@@ -352,7 +352,7 @@
     padding:0 20px;
   }
   .pic {
-    width: 125px; 
+    width: 150px; 
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;

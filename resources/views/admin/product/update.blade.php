@@ -57,6 +57,16 @@
 
                         <div class="row mb-3">
                             <div class="col">
+                                <label for="whatsapp" class="form-label">WhatsApp Number</label>
+                                <input id="whatsapp" type="text" name="whatsapp" value="{{ old('whatsapp', $products->whatsapp) }}" class="form-control">
+                                @error('whatsapp')
+                                <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
                                 <label class="form-label">Image</label>
                                 <input type="file" name="image" class="form-control">
                                 @error('image')
@@ -64,7 +74,7 @@
                                 @enderror
                             </div>
                         </div>
-
+                        
                         <!-- Menampilkan gambar lama jika ada -->
                         @if($products->image_url)
                             <div class="row mb-3">

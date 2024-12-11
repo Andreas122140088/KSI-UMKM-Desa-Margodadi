@@ -27,6 +27,7 @@
                                 <th>Category</th>
                                 <th>Price</th>
                                 <th>Description</th>
+                                <th>Whatsapp Link</th>
                                 <th>Images</th>
                                 <th>Action</th>
                             </tr>
@@ -39,6 +40,13 @@
                                 <td class="align-middle">{{ $product->category }}</td>
                                 <td class="align-middle">{{ $product->price }}</td>
                                 <td class="align-middle">{{ $product->description }}</td>
+                                <td class="align-middle">
+                                    @if($product->whatsapp)
+                                    <a href="https://wa.me/{{ $product->whatsapp }}" target="_blank">Chat via WhatsApp</a>
+                                    @else
+                                        <span>No WhatsApp</span>
+                                    @endif
+                                </td>
                                 <td class="align-middle">
                                     @if($product->image_url)
                                     <img src="{{ Storage::url($product->image_url) }}" alt="Product Image" width="100" height="100">

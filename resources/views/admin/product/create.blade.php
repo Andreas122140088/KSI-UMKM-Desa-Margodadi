@@ -54,7 +54,16 @@
                                 @enderror
                             </div>
                         </div>
-                        
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input name="whatsapp" class="form-control" placeholder="Enter WhatsApp URL (e.g., https://wa.me/1234567890)" value="{{ old('whatsapp') }}">
+                                @error('whatsapp')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                        </div>
+                                           
                         <!-- Input untuk Gambar -->
                         <div class="row mb-3">
                             <div class="col">

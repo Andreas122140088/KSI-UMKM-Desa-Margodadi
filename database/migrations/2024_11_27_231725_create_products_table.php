@@ -15,9 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('category');
-            $table->decimal('price');
+            $table->decimal('price', 10, 2);
             $table->text('description')->nullable();  // Menambahkan kolom deskripsi
-            $table->string('image_url')->nullable();  // Menambahkan kolom untuk URL gambar
+            $table->string('image_url')->nullable();   // Menambahkan kolom untuk URL gambar
+            $table->string('whatsapp')->nullable();  
             $table->timestamps();
         });
     }

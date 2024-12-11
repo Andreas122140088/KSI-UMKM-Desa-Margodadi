@@ -27,7 +27,6 @@ Dengan membuat website pemasaran produk akan membuat lingkup pemasaran produk da
 |Dyo Dwi Carol Bukit|122140145|[GitHub](https://github.com/DyoBukit)|
 |Muhammad Nelwan Fakhri|122140173|[GitHub](https://github.com/shrxxxk)|
 |Lucas Hamonangan Simaremare|122140196|[GitHub](https://github.com/lucashmnn)|
-|Raditya Erza Farandi|122140209|[GitHub](https://github.com/svernykh)|
 
 ##
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>

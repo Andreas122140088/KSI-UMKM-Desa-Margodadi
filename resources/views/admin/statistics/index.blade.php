@@ -5,32 +5,40 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    <h1 class="mb-0">Visit Statistics</h1>
-                    <hr />
-
-                    <h3>Total Visitors: {{ $totalVisitors }}</h3>
-
-                    <h3>Visitors Per Day (Last 7 Days):</h3>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Visitors</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($visitorsPerDay as $visitor)
-                            <tr>
-                                <td>{{ $visitor->date }}</td>
-                                <td>{{ $visitor->total }}</td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Visit Statistics</div>
+    
+                    <div class="card-body">
+                        <p>Total Page Views: <strong>{{ $visitCount }}</strong></p>
+    
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Page URL</th>
+                                    <th>IP Address</th>
+                                    <th>Visited At</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @forelse($visitStats as $index => $visit)
+                                    <tr>
+                                        <td>{{ $index + 1 }}</td>
+                                        <td>{{ $visit->page_url }}</td>
+                                        <td>{{ $visit->ip_address }}</td>
+                                        <td>{{ \Carbon\Carbon::parse($visit->created_at)->diffForHumans() }}</td>
+                                    </tr>
+                                @empty
+                                    <tr>
+                                        <td colspan="4" class="text-center">No visits recorded yet.</td>
+                                    </tr>
+                                @endforelse
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

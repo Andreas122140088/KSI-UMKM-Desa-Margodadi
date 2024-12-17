@@ -36,7 +36,7 @@
         <h2>PRODUK UMKM</h2>
         <h2>DESA MARGODADI</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-        <button class="view-more-button" onclick="window.location.href='home2'">View More</button>
+        <button class="view-more-button" onclick="window.location.href='product'">View More</button>
         <button class="learn-more-button" onclick="window.location.href='home'">UMKM</button>
       </div>
     
@@ -97,7 +97,6 @@
           @else
             <span>No Image</span>
           @endif
-          <img src="/img/favorite_icon.png" class="heart">
           <h2>{{$product->title}}</p></h2>
           <p>{{$product->category}}</p>
         </a>

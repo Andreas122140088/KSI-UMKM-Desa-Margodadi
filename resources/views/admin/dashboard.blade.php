@@ -15,8 +15,8 @@
                     <nav>
                         <ul class="nav nav-pills">
                             <li class="nav-item">
-                                <a href="{{ route('admin.statistics.index') }}" class="nav-link">Visit Statistics</a>
-                            </li>
+                                {{-- <a href="{{ route('admin.statistics.index') }}" class="nav-link">Visit Statistics</a>
+                            </li> --}}
                             <li class="nav-item">
                                 <a href="{{ route('admin/products') }}" class="nav-link">Products</a>
                             </li>

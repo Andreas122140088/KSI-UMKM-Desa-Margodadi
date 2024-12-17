@@ -35,97 +35,81 @@
   <section class="product-grid">
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</p></h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Rengginang</p></h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Kerajinan Tangan</h2>
       <p>Product Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</p></h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Rengginang</p></h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Kerajinan Tangan</h2>
       <p>Product Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
-      <img src="/img/favorite_icon.png" class="heart">
       <h2>Batik</h2>
       <p>Description</p>
     </div>

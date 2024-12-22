@@ -7,6 +7,11 @@ use App\Http\Controllers\ProductController;
 // use App\Http\Controllers\Admin\StatisticsController;
 use App\Models\Product;
 
+Route::get('/', function () {
+    $products=Product::all();
+    return view('home')->with('products',$products);
+});
+
 Route::get('/home', function () {
     $products=Product::all();
     return view('home')->with('products',$products);

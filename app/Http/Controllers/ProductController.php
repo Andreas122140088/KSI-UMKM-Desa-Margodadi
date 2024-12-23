@@ -29,7 +29,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'description' => 'required|string',
             'whatsapp' => 'required|string|max:15',
-            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif,svg|max:2048',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif,svg|max:5048',
         ]);
 
         // Upload Image

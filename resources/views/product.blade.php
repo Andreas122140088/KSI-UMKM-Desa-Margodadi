@@ -14,51 +14,56 @@
       <h1 class="site-name">UMKM<br> DESA MARGODADI</h1>
     </div>
     <div class="navbar-center">
-      <a href='about'>ABOUT</a>
-      <a href='product'>PRODUCT</a>
-      <a href='contact'>CONTACT</a>
+      <a href='/about'>ABOUT</a>
+      <a href='/product'>PRODUCT</a>
+      <a href='/contact'>CONTACT</a>
     </div>
     <div class="dropdown">
       <button class="dropdown-btn"><img src="/img/menu_icon.png" width="50" height="40"></button>
       <div class="dropdown-menu">
-          <a href='about'>ABOUT</a>
-          <a href='product'>PRODUCT</a>
-          <a href='contact'>CONTACT</a>
+          <a href='/about'>ABOUT</a>
+          <a href='/product'>PRODUCT</a>
+          <a href='/contact'>CONTACT</a>
       </div>
   </div>
   </div>
 
   <div class="content">
+    <!-- Grid Kolom 1: Kontainer Gambar -->
     <div class="image-container">
       <div class="box">
         @if($product->image_url)
-            <img class="pic" src={{ Storage::url($product->image_url) }} class="product">
-          @else
-            <span>No Image</span>
-          @endif
-          {{-- <img class="pic" src="/img/image-13.png" alt="Gambar 1" data-full="/img/image-1-large.png"> --}}
+          <img class="pic" src="{{ Storage::url($product->image_url) }}" onclick="showModal(this)" />
+        @else
+          <span>No Image</span>
+        @endif
       </div>
+    </div>
+  
+    <!-- Grid Kolom 2: Informasi Produk -->
+    <div class="box">
+      <div class="product">
+        <p class="product-name">{{$product->title}}</p>
+        <p class="price">Rp.{{$product->price}}</p>
+  
+        <!-- Textbox untuk deskripsi -->
+        <textarea class="textbox" readonly>{{$product->description}}</textarea>
+  
+        <div class="button-container">
+          <button class="back" onclick="goBack()">KEMBALI</button>
+          <button class="whatsapp" onclick="window.open('https://wa.me/{{ $product->whatsapp }}', '_blank')">Chat di WhatsApp</button>
+        </div>
+      </div>
+    </div>
   </div>
   
   <!-- Modal untuk memperbesar gambar -->
   <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01">
-      <div id="caption"></div>
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
   </div>
   
-      <div class="box">
-        <div class="product">
-            <p class="product-name">{{$product->title}}</p>
-            <p class="price">Rp.{{$product->price}}</p>
-                <div class="text">{{$product->description}}</div>
-            <div class="button-container">
-                <button class="back" onclick="goBack()">KEMBALI</button>
-                <button class="whatsapp" onclick="window.open('https://wa.me/{{ $product->whatsapp }}', '_blank')">Chat di WhatsApp</button>
-            </div>
-        </div>
-      </div>
-    </div>
   
   <script>
     function goBack() {

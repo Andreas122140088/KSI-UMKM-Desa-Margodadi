@@ -38,9 +38,8 @@
             </div>
         </div>
         <div class="text-section">
-            <h3>WHO WE ARE</h3>
-            <h2>We combine our experience and passion to develop solutions that empower businesses.</h2>
-            <p>Lorem ipsum is simply dummy text of the printing and industry. Lorem ipsum has been the industry's standard text ever since the 1500s, when an unknown printer took of type and scrambled it to make a type specimen book.</p>
+            <h2>KELOMPOK 6 KSI RC</h2>
+            <p>Kami adalah tim yang berdedikasi dalam menciptakan solusi digital. Website ini dibuat untuk mendukung potensi lokal Desa Margadadi dan membantu usaha kecil dan menengah untuk berkembang lebih luas.</p>
         </div>
     </section>
 

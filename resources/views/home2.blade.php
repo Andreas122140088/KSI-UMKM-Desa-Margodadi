@@ -32,7 +32,23 @@
       </div>
     </div>
 
-  <section class="product-grid">
+    <section class="product-grid">
+      @foreach ($products as $product)
+      <div class="product-card">
+        <a href="/product/{{$product->id}}">
+          @if($product->image_url)
+            <img src={{ Storage::url($product->image_url) }} class="product">
+          @else
+            <span>No Image</span>
+          @endif
+          <h2>{{$product->title}}</p></h2>
+          <p>{{$product->category}}</p>
+        </a>
+      </div>
+      @endforeach
+    </section>
+    
+  {{-- <section class="product-grid">
     <div class="product-card">
       <img src="/img/rengginang.jpeg" class="product">
       <h2>Batik</p></h2>
@@ -113,7 +129,7 @@
       <h2>Batik</h2>
       <p>Description</p>
     </div>
-  </section>
+  </section> --}}
   
   <footer class="footer">
     <div class="footer-container">

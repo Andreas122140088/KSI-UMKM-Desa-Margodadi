@@ -13,17 +13,23 @@ class StatisticsController extends Controller
     {
         $pageUrl = $request->fullUrl();  // URL yang diakses
         $ipAddress = $request->ip();     // IP pengunjung
-
+    
+        // Debugging
+        logger("Page URL: $pageUrl, IP: $ipAddress");
+    
         VisitStatistic::create([
             'page_url' => $pageUrl,
-            'ip_address' => $ipAddress
+            'ip_address' => $ipAddress,
         ]);
     }
 
     // Method untuk menampilkan statistik kunjungan
-    public function showStatistics()
+    public function index()
     {
-        $visitCount = VisitStatistic::count(); // Hitung jumlah total kunjungan
-        return view('admin.statistics.index', compact('visitCount')); // Kirim ke view
+    $visitCount = VisitStatistic::count(); // Hitung jumlah total kunjungan
+    $visitStats = VisitStatistic::latest()->get(); // Ambil semua data kunjungan terbaru
+    return view('admin.statistics.index', compact('visitCount', 'visitStats')); // Kirim ke view
     }
+
+
 }

@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
-// use App\Http\Controllers\Admin\StatisticsController;
+use App\Http\Controllers\Admin\StatisticsController;
 use App\Models\Product;
 
 Route::get('/', function () {
@@ -13,15 +13,16 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    $products=Product::all();
-    return view('home')->with('products',$products);
+    $products = Product::orderBy('created_at', 'desc')->take(5)->get();
+    return view('home')->with('products', $products);
 });
 
 Route::get('/product', function () {
-    return view('home2');
+    $products=Product::all();
+    return view('home2')->with('products',$products);
 });
 
-Route::get('/about', function () {
+Route::get('/about', function () {  
     return view('about');
 });
 
@@ -56,12 +57,12 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/products/delete/{id}', [ProductController::class, 'delete'])->name('admin/products/delete');
 });
 
-// Route::middleware(['auth', 'admin'])->group(function () {
-//     Route::get('/admin/statistics', [StatisticsController::class, 'index'])->name('admin.statistics.index');
-//     Route::get('/admin/products', [ProductController::class, 'index'])->name('admin/products');
-// });
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin/statistics', [StatisticsController::class, 'index'])->name('admin/statistics/index');
+    Route::get('/admin/products', [ProductController::class, 'index'])->name('admin/products');
+});
 
-// Route::get('/admin/statistics', [StatisticsController::class, 'index'])->name('admin.statistics.index');
-
+Route::get('/admin/statistics', [StatisticsController::class, 'index'])->name('admin/statistics/index');
+Route::get('/record-visit', [StatisticsController::class, 'recordVisit']);
 
 require __DIR__.'/auth.php';
